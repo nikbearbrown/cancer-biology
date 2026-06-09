@@ -1,122 +1,138 @@
-# Oncogenes
+# Chapter 5 — Oncogenes
+*The Accelerator Was Already There.*
 
-## Learning Objectives
+In 1973, Janet Rowley looked at the chromosomes of a chronic myeloid leukemia patient under a microscope and noticed that two chromosomes — 9 and 22 — had traded pieces. Chromosome 22 came out shorter. That shortened chromosome 22 became known as the Philadelphia chromosome, and it turned out to be present in nearly every CML patient ever examined. Something about that swap was driving the disease.
 
-By the end of this chapter, you should be able to:
+It took another decade to understand what the swap actually did. The traded piece of chromosome 9 carried a gene called *ABL1*, a kinase — an enzyme that attaches phosphate groups to other proteins and thereby switches them on. When *ABL1* landed on chromosome 22, it fused to a gene there called *BCR*. The fusion protein that resulted was an ABL kinase that could not turn off. Normally ABL is held in an autoinhibited state, kept quiet until needed. The BCR fusion removed the inhibition. The kinase fired continuously. That signal told myeloid precursor cells to keep dividing, and they did — endlessly, flooding the blood.
 
-- **Distinguish** a proto-oncogene from an oncogene, and **explain** why most oncogenes are normal cellular genes locked in an active state rather than foreign cancer genes.
-- **Describe** the three principal mechanisms by which a proto-oncogene becomes an oncogene — point mutation, gene amplification, and chromosomal rearrangement — and **identify** a canonical example of each.
-- **Trace** the signaling logic of RAS: how the protein normally switches off, how mutation prevents shutoff, and how the stuck switch drives proliferation.
-- **Explain** why oncogenes typically require alteration of only one allele, and **contrast** this gain-of-function logic with the loss-of-function logic of tumor suppressors (Chapter 6).
-- **Predict** why oncogene-addicted cancers respond to targeted drugs and why that response is usually temporary.
+Here is what makes the story strange. *ABL1* is not a cancer gene in any ordinary sense. It is a gene that healthy cells need, doing ordinary cellular work. The cancer did not arise because a new, dangerous gene was introduced. It arose because an existing gene was jammed into the active position. The accelerator was already built into the car. The mutation just held it down.
 
-## Opening Case
+---
 
-A 58-year-old woman is diagnosed with chronic myeloid leukemia (CML). Her white blood cell count is enormous, packed with immature myeloid cells. A karyotype of her marrow shows the telltale lesion: a shortened chromosome 22, the Philadelphia chromosome, produced when a piece of chromosome 9 swaps with a piece of chromosome 22. The swap fuses two genes that should never meet — *BCR* and *ABL1* — into a single hybrid. The fusion protein is an enzyme that never stops firing, and its constant signal is what drives her marrow to overproduce.
+The conceptual revolution happened in the 1970s, and it ran directly counter to what people thought cancer was. The prevailing idea was that cancer came from something foreign — a virus, a carcinogen, an external principle that corrupted normal cells from outside. Then Harold Varmus and Michael Bishop, studying the Rous sarcoma retrovirus, discovered that the viral gene responsible for transforming normal cells — the *v-src* oncogene — was not a viral invention. It was a slightly altered copy of a gene already present in normal vertebrate cells, which they called *c-src* (NCBI Bookshelf, *Development and Causes of Cancer*). The virus had picked up a cellular gene, mutated it slightly, and was using it as a weapon. Bishop and Varmus won the 1989 Nobel Prize for the framework that followed: cells carry in their own genomes the genes that, when altered, cause cancer. The first human oncogene — a mutant *HRAS* isolated from a bladder carcinoma by transfection assay — was identified in 1982, confirming that these alterations arise spontaneously, without any virus.
 
-Thirty years ago, this diagnosis carried a median survival of a few years. Her oncologist instead prescribes a daily pill. Within weeks her blood counts normalize; within months the Philadelphia chromosome is undetectable. The pill, imatinib, does one thing: it blocks the fused enzyme's active site (Druker et al., as summarized in NCBI Bookshelf, *The Development and Causes of Cancer*). The leukemia, it turns out, had bet everything on that one signal — and the drug called the bet.
+The terminology that emerged: a **proto-oncogene** is the normal, functional version — a gene that promotes cell growth, survival, or signaling as part of healthy tissue operation. An **oncogene** is the altered version — the same gene after a mutation, amplification, or rearrangement has locked it into excessive or inappropriate activity. The mutation does not give the gene a new purpose. It removes the controls on the old one. The *KRAS* gene driving roughly 90 percent of pancreatic cancers is the same *KRAS* that mediates normal growth-factor signaling in dividing cells throughout the body (NCI, *The Genetics of Cancer*). One amino acid changed is all that separates the useful protein from the cancer driver.
 
-This chapter is about why a single jammed gene can drive a cancer, and why blocking it can produce a near-cure. To get there we first have to see what these genes do when they are working normally.
+About 100 human proto-oncogenes are known. They cluster in a few functional categories — growth factors, growth-factor receptors, cytoplasmic kinases, GTP-binding switch proteins, transcription factors, cell-cycle regulators — and the clustering makes sense. A cell that is growing without permission is misfiring the same machinery that controls normal growth. The cancer is not running a different program; it is running the same program with the governor removed.
 
-## Core Concepts
+<!-- → [DIAGRAM: proto-oncogene categories arranged along a growth-factor signaling pathway — secreted growth factor → receptor tyrosine kinase → cytoplasmic kinase → RAS GTPase → MAPK cascade → transcription factor → cell-cycle gene; each node labeled with a canonical proto-oncogene name] -->
 
-### From proto-oncogene to oncogene
+---
 
-Start with the central, counterintuitive fact: **most oncogenes are not cancer genes.** They are normal cellular genes, doing useful work, that have been jammed into the "on" position.
+The genetic signature of an oncogene is that a single altered allele is usually sufficient to cause the problem. The reason follows directly from what the problem is: too much activity. One overactive copy provides the excess signal. This is **gain of function**, and it makes oncogene mutations behave as **dominant** at the cellular level — one mutated allele overrides the normal copy sitting beside it.
 
-A **proto-oncogene** is a normal gene that promotes cell growth, survival, or signaling as part of healthy tissue function. An **oncogene** is the altered, overactive version of that gene — the same gene after a mutation, amplification, or rearrangement has locked it into excessive or inappropriate activity. The mutation does not give the gene a new job; it removes the controls on the old one. The *KRAS* gene that drives roughly 90 percent of pancreatic cancers is the same *KRAS* required for normal growth-factor signaling in dividing cells throughout the body (NCI, *The Genetics of Cancer*). A single point mutation is what converts the useful gene into the cancer driver.
+This is the opposite of how tumor suppressors work (Chapter 6). A tumor suppressor holds growth in check; losing it means losing a restraint, and usually both copies must be inactivated before the restraint fails — the two-hit logic Knudson formalized (Hino, 2017). Oncogenes are not two-hit. The Philadelphia chromosome patient has one *BCR-ABL* fusion allele and one normal *ABL1* on the other chromosome. The normal *ABL1* is doing its ordinary job, but it does not rescue the situation. One stuck kinase is enough.
 
-This was the conceptual revolution. Before the 1970s, cancer was thought to come from outside — a virus, a carcinogen, a foreign "cancer principle." Then Harold Varmus and Michael Bishop, studying the Rous sarcoma retrovirus, discovered that its transforming gene (*v-src*) was a captured, slightly altered copy of a gene already present in normal cells (*c-src*) (NCBI Bookshelf, *The Development and Causes of Cancer*). The implication: cells carry within their own genomes the genes that, when altered, cause cancer. Bishop and Varmus shared the 1989 Nobel Prize for the framework that is now textbook. The first human oncogene, a mutant *HRAS* from a bladder cancer, was identified by transfection assays in 1982.
+A clean illustration of how dosage alone can be sufficient: **HER2**, a growth-factor receptor encoded by *ERBB2*, is amplified in about 15–20 percent of breast cancers `[verify — specific percentage]`. The protein itself is not mutated. There is simply far too much of it — dozens of extra gene copies mean the cell surface is dense with receptor, and even low levels of ligand produce an overwhelming proliferative signal. One normal copy of HER2 would be fine. Fifty amplified copies are not.
 
-About 100 human proto-oncogenes are known. They cluster in a few functional categories — growth factors, growth-factor receptors, signaling kinases, GTP-binding switch proteins, transcription factors, cell-cycle and apoptosis regulators. The categories make sense: a cell that grows inappropriately is misfiring the same machinery that controls normal growth.
+---
 
-<!-- → [DIAGRAM: proto-oncogene functional categories arranged along a growth-factor signaling pathway, from secreted growth factor → receptor → cytoplasmic kinase → RAS switch → MAPK cascade → transcription factor → cell-cycle gene] -->
+A proto-oncogene becomes an oncogene by one of three routes, and each produces a different kind of excess.
 
-### Gain-of-function genetics: why one allele is enough
+**Point mutation** alters a single amino acid and locks the protein active. *KRAS* G12D — glycine changed to aspartate at codon 12 — is the prototype. *BRAF* V600E, present in roughly half of melanomas, is another (NCBI Bookshelf, *Development and Causes of Cancer*). The mutations that cause cancer cluster at specific positions — the hot spots — and they cluster there because only mutations at the regulatory region produce the constitutively active protein. A substitution elsewhere in *KRAS* might be neutral or destabilizing; the hot spots are where selection finds the useful change. The pattern is not chemistry driving mutation — it is selection amplifying the rare events that confer growth advantage.
 
-Here is the genetic signature of an oncogene: a single altered allele is usually sufficient. The problem is too much activity, and one overactive copy provides it. This is **gain of function**, and it makes oncogene mutations behave as **dominant** at the cellular level — one mutated copy overrides the normal one.
+**Gene amplification** increases copy number, raising expression without altering the protein. *MYCN* is amplified in about 25 percent of neuroblastomas, where it strongly predicts poor prognosis. *HER2* is amplified in breast and gastric cancers. *EGFR* is amplified in roughly half of glioblastomas. The protein is normal in sequence; the problem is that ten or a hundred times the usual amount is present. The signal is normal in kind but overwhelming in magnitude.
 
-Contrast this with tumor suppressors (Chapter 6), where the problem is *loss* of a restraining function and both copies must typically be knocked out before the brake fails — the **two-hit** logic of Knudson (Hino, 2017). Applying two-hit reasoning to oncogenes is a common error: you do not need to mutate both *KRAS* alleles, because one stuck accelerator already pushes the cell forward.
+**Chromosomal rearrangement** creates either hybrid proteins or inappropriate expression of normal ones. The Philadelphia chromosome is the canonical fusion: the *ABL1* kinase and the *BCR* gene join, and the fusion protein lacks the regulatory domain that normally keeps ABL autoinhibited. The kinase is constitutively active — not because its catalytic site changed, but because the molecular leash was removed. Rearrangements can also work through **enhancer hijacking**: in Burkitt lymphoma, the t(8;14) translocation moves *MYC* next to the immunoglobulin heavy-chain enhancers, which are among the most powerful transcriptional activators in B cells. The MYC protein is completely normal. It is just expressed at extreme levels in a cell type that responds to MYC by proliferating.
 
-A clean illustration is **HER2** (also called *ERBB2*), a growth-factor receptor. In about 15–20 percent of breast cancers, the *HER2* gene is amplified — present in many extra copies — so the cell displays an overwhelming density of receptor. The protein itself is normal; there is simply too much of it, and the tissue behaves as if drenched in growth signal [verify — specific percentage].
+<!-- → [DIAGRAM: three-panel comparison — left panel: point mutation showing single base change in codon 12 and the resulting stuck G12D protein with GTP permanently bound; middle panel: amplification showing many gene copies in the nucleus and excess protein on the membrane; right panel: translocation showing chromosomal exchange and the resulting fusion protein with active kinase domain and no autoinhibitory domain] -->
 
-### Three mechanisms of activation
+---
 
-A proto-oncogene becomes an oncogene by one of three main routes.
+RAS deserves a close look because it is the most commonly mutated oncogene family in human cancer — *KRAS*, *HRAS*, and *NRAS* together are altered in perhaps a quarter of all human tumors — and because the molecular logic is unusually transparent.
 
-**Point mutation.** A single base change alters one amino acid and locks the protein active. *KRAS* G12D — glycine to aspartate at codon 12 — is the prototype. *BRAF* V600E, found in roughly half of melanomas, is another (NCBI Bookshelf, *The Development and Causes of Cancer*). What is striking is the *narrowness* of where these mutations land. *KRAS* in pancreatic cancer is almost always mutated at codon 12, rarely elsewhere — because only mutations at the regulatory region produce the constitutively active protein that confers a growth advantage. Selection, not chemistry, explains the hot spots.
+RAS proteins are small GTPases, membrane-bound molecular switches. The switch is loaded into the **active state** when a guanine nucleotide exchange factor (GEF) displaces GDP and allows GTP to bind. The switch is **reset to inactive** when GTP is hydrolyzed to GDP by the protein's own GTPase activity, a reaction accelerated by GTPase-activating proteins (GAPs). Active RAS — GTP-bound — signals through the RAF→MEK→ERK cascade (the MAPK pathway, which drives proliferation) and through PI3K→AKT (which drives survival). The canonical circuit: a growth factor binds its receptor, the receptor recruits a GEF, the GEF activates RAS, RAS fires the downstream cascades, the signal propagates, and then GAP brings RAS back to the GDP-bound resting state (NCBI Bookshelf, *Development and Causes of Cancer*).
 
-**Gene amplification.** Extra copies of the gene raise expression dramatically. *MYCN* is amplified in about 25 percent of neuroblastomas and predicts poor prognosis; *HER2* is amplified in breast and gastric cancers; *EGFR* is amplified in roughly half of glioblastomas. The protein is normal but present at 10 to 100 times the usual level.
+Oncogenic mutations at codons 12, 13, or 61 interfere with GTP hydrolysis. The mutant protein can still bind GTP; it simply cannot hydrolyze it efficiently — even with GAP assistance, the hydrolysis rate is roughly a hundred times slower. The switch stays locked active. The cell keeps receiving the "grow" signal regardless of whether any growth factor is present. The growth-factor receptor above RAS can be completely normal; it does not matter. The signal pathway has been short-circuited at the switch.
 
-**Chromosomal rearrangement.** Translocations either create hybrid proteins or place a gene under inappropriate control. The Philadelphia chromosome from the opening case — *BCR-ABL* — is the canonical fusion: the ABL kinase, normally held in an autoinhibited state, loses its restraint in the fusion and fires continuously. Rearrangements can also drive cancer by **enhancer hijacking**: in Burkitt lymphoma, the t(8;14) translocation moves *MYC* next to immunoglobulin enhancers, forcing the normal MYC protein to extreme expression.
+For decades, RAS was considered undruggable. The protein has no obvious pocket for a small molecule to occupy, and attempts to block the GTP-binding site failed because RAS binds GTP with extraordinarily high affinity — no drug could compete. This changed when a specific covalent approach was found for the *KRAS* G12C mutation, common in lung adenocarcinoma: the mutant cysteine at position 12 presents a reactive surface that an electrophilic small molecule can attack irreversibly. Sotorasib and adagrasib, both G12C-specific covalent inhibitors, are now FDA-approved — modest but real benefits, and conceptually important as proof that the "undruggable" label was a statement about our chemistry at a moment in time, not a permanent verdict. The far more common G12D mutation (the dominant driver in pancreatic cancer) lacks that reactive cysteine, which is precisely why the same approach does not transfer, and why a G12D inhibitor required a different chemical strategy. The boundary condition is molecular: one nucleotide difference in the mutation changes what chemistry is possible.
 
-<!-- → [DIAGRAM: three-panel comparison — point mutation (single base → stuck protein), amplification (many gene copies → excess protein), translocation (gene fusion → novel active enzyme)] -->
+---
 
-### RAS: a switch stuck on
+Transcription factors are a second major oncogene category, and they illustrate a different kind of problem. The **MYC** family — *MYC*, *MYCN*, *MYCL* — drives expression of thousands of genes involved in proliferation, ribosome biogenesis, and metabolism. MYC is deregulated in a large fraction of human cancers: amplified in neuroblastoma, translocated in Burkitt lymphoma, hyperactivated downstream of RAS in many epithelial cancers (Hanahan, 2022).
 
-RAS deserves a closer look because it is the most commonly mutated oncogene family and because its biology shows the logic cleanly. The three RAS genes — *KRAS*, *HRAS*, *NRAS* — encode small membrane-bound GTPases. A **GTPase** is a molecular switch: **active** when bound to GTP, **inactive** when bound to GDP. Guanine nucleotide exchange factors (GEFs) load GTP and switch RAS on; GTPase-activating proteins (GAPs) accelerate hydrolysis of GTP to GDP and switch it off. Active RAS signals through the RAF→MEK→ERK (MAPK) cascade and the PI3K→AKT pathway, both of which drive proliferation and survival (NCBI Bookshelf, *The Development and Causes of Cancer*).
+In healthy cells, MYC is produced in brief pulses. Both the mRNA and the protein have very short half-lives — the wave of MYC expression that follows a growth signal rises quickly and then falls. Cancers that have amplified or translocated *MYC* keep it high continuously, locking the cell in a state where thousands of growth and metabolic genes are always turned on.
 
-Mutations at codons 12, 13, or 61 interfere with GTP hydrolysis. RAS can no longer turn itself off — even with GAP help, hydrolysis is roughly 100-fold slower. The switch stays on. The cell keeps receiving the "grow" signal with no growth factor present. The classical analogy is a stuck accelerator, and like all analogies it must be tied back to the molecule: the accelerator is GTP that cannot be hydrolyzed.
+MYC is also undruggable by direct approaches, for a different reason than RAS: transcription factors bind DNA, not small-molecule substrates, and they have no enzymatic active site to inhibit. The productive strategies have been indirect — targeting what MYC-driven cells depend on. The BET bromodomain reader BRD4 is required for MYC-dependent transcription at many loci; BET inhibitors (drugs that block BRD4's interaction with acetylated histones) suppress MYC-driven programs without touching MYC directly. The principle is general: if you cannot block the oncogene, identify what the oncogene-addicted cell cannot live without.
 
-RAS was considered "undruggable" for decades — the protein has no obvious pocket for a small molecule to grab. That changed when the *KRAS* G12C mutant, common in lung adenocarcinoma, was found to present a reactive surface cysteine that a covalent drug could bind. Sotorasib and adagrasib, both G12C-specific, are now FDA-approved for *KRAS* G12C-mutant lung cancer — modest benefits, but proof that even the hardest targets can yield. The more common G12D mutation (the prototypical pancreatic-cancer driver) lacks that reactive cysteine, which is why a G12D inhibitor was much harder to develop. The boundary condition matters: a strategy that works for one specific RAS variant does not automatically transfer to another.
+---
 
-### MYC: the transcription-factor problem
+A 55-year-old never-smoker is diagnosed with lung adenocarcinoma. Tumor sequencing shows an *EGFR* exon-19 deletion — a small in-frame indel that removes part of the kinase domain regulatory loop and locks EGFR in a constitutively active, ligand-independent state. EGFR signals through RAS/MAPK and PI3K/AKT, the same downstream pathways that RAS mutations activate. The tumor is **oncogene-addicted**: its proliferation and survival depend on continuous EGFR output, and when that output is blocked, the cells have no alternative.
 
-A second deeply important oncogene category is the **transcription factor** — a protein that binds DNA at specific sequences and turns target genes on or off. The MYC family (*MYC*, *MYCN*, *MYCL*) is the most cancer-relevant; MYC is deregulated in a large fraction of human cancers by amplification, translocation, or upstream pathway activation, and it drives expression of thousands of genes involved in proliferation, metabolism, and ribosome biogenesis (Hanahan, 2022).
+She starts osimertinib, a third-generation EGFR inhibitor, and within three months her tumors have shrunk dramatically. This looks, for a moment, like a cure.
 
-MYC also shows how proto-oncogenes are normally controlled. In healthy cells MYC is produced in brief pulses — both the mRNA and the protein have short half-lives — so a growth signal triggers a wave of target-gene expression that then subsides. Cancers that have lost this control (by translocation, amplification, or stabilizing the protein) keep MYC high constantly, locking the cell in proliferation mode. Like RAS, MYC has long been considered undruggable, because a transcription factor has no enzymatic active site to inhibit. The productive strategy has been indirect — drugging what MYC-driven cells depend on (transcriptional cofactors such as the BET reader BRD4, specific metabolic pathways) rather than MYC itself.
+It is not. Eighteen months later, imaging shows new growth. Resequencing of the resistant tumor finds the original *EGFR* deletion still present — the drug is still blocking that target — but now the cancer has also amplified *MET*, a different receptor tyrosine kinase. MET can activate RAS/MAPK and PI3K/AKT independently of EGFR. The cancer has rewired itself: it no longer cares whether EGFR is blocked, because the signal it needs arrives through a different receptor.
 
-## Worked Example
+This is the **bypass track**, one of the canonical resistance mechanisms. The others are: secondary mutation within the target that prevents the drug from binding (the *EGFR* T790M "gatekeeper" mutation, or the *BCR-ABL* T315I mutation that made some CML patients resistant to imatinib), amplification of the target so that drug concentrations that were sufficient no longer are, and phenotypic switching to a completely different cell state that no longer depends on the oncogene at all — EGFR-mutant adenocarcinomas occasionally transform to small-cell histology and shed their EGFR dependence entirely.
 
-**Situation.** A 55-year-old never-smoker is diagnosed with non-small-cell lung adenocarcinoma. Tumor sequencing is ordered to match her to a targeted therapy.
+Her therapy changes to combine EGFR and MET inhibition, and control is restored for a further period. The logic of her treatment is now chasing evolution: each resistance mechanism is a selected subclone that survived the last therapy, and the next therapy must address it while anticipating the one after.
 
-**Process.** The report shows an *EGFR* exon-19 deletion — a small indel that locks the EGFR receptor tyrosine kinase in an active, ligand-independent state. EGFR signals through RAS/MAPK and PI3K/AKT, the same proliferative pathways RAS feeds. The cell is **oncogene-addicted**: its survival now depends on the continuous EGFR signal. She is started on osimertinib, an EGFR inhibitor, and her tumors shrink dramatically over three months.
+The lesson from CML is that oncogene addiction creates a genuine vulnerability — the cancer has, in effect, concentrated its dependency onto one signal, and blocking that signal can produce responses that look like cures. The lesson from lung adenocarcinoma is that the same concentration of dependency makes the cancer exquisitely motivated to find an alternative, and it has billions of cells, continuous mutation, and time to search.
 
-*A dead end.* One might predict the response is permanent, because the drug blocks the causal driver. It is not. After about eighteen months her cancer regrows. Resequencing of the resistant tumor shows the original *EGFR* mutation *plus* an amplification of a different gene, *MET*. The cancer has rewired: it now drives the same downstream pathways through MET instead of EGFR — a **bypass track**. Blocking EGFR no longer matters, because the proliferative signal arrives by another route.
+---
 
-**Resolution.** Her therapy is changed to combine EGFR and MET inhibition, restoring control for a further period. Resistance, in oncogene-addicted cancers, is the rule, not the exception. It arises by secondary mutation in the target (the EGFR T790M "gatekeeper" mutation, the BCR-ABL T315I mutation), amplification of the target, bypass activation of a parallel pathway, or phenotypic switching to a different cell state.
+The Philadelphia chromosome patient who started imatinib in the early 2000s is, in many cases, alive today. CML was nearly always fatal within a few years; it is now, for most patients, a manageable chronic condition. That outcome traces directly to the clarity of the molecular target: one fusion protein, one drug, one blocked active site. The cancer had bet everything on BCR-ABL, and imatinib called the bet.
 
-**The lesson.** Targeted drugs work because the cancer depends on the oncogene's output, but the same cancer can evolve a new way to produce that output, so durable control requires anticipating and blocking the escape routes.
+Most oncogene-driven cancers are not so simple. RAS in pancreatic cancer has resisted targeted therapy for forty years. MYC drives many tumors and has no direct inhibitor. EGFR-mutant lung cancer responds brilliantly and then escapes. The principle — find the gene the cancer depends on, block it — is sound, and it has produced some of the most dramatic responses in oncology. The challenge is that cancer is a population under selection, and the drug is the selection pressure. Whatever the pre-existing resistant minority turns out to be, it will expand.
 
-**The limit.** This logic holds for cancers with a single dominant driver; tumors with many co-equal drivers, or with no druggable driver (most pancreatic *KRAS* cancers, until recently), do not respond to this strategy.
+The accelerator was already there. Blocking it works, until the car finds another way to move.
 
-## Common Misconceptions
-
-**"Oncogenes are genes whose normal purpose is to cause cancer."** This inverts the biology. Proto-oncogenes do essential work — signaling growth, transmitting receptor signals, driving normal proliferation. Cancer arises when one is locked active, not when a "cancer gene" is switched on. In the opening case, *ABL1* is a normal kinase needed for healthy cells; the disease comes from fusing it to *BCR* so it cannot turn off.
-
-**"You need to knock out both copies of an oncogene, like a tumor suppressor."** This misapplies two-hit logic. Because the problem is excess activity, a single mutant allele is dominant and sufficient (Hino, 2017). The CML patient has one *BCR-ABL* fusion allele and one normal *ABL1*; the fusion alone drives the disease.
-
-**"If the drug hits the causal driver, the response should be permanent."** As the worked example shows, oncogene addiction creates a real vulnerability but not a permanent one. Cancer is an evolving population; secondary mutations and bypass tracks restore pathway output. The CML patient's leukemia can acquire the T315I mutation that prevents imatinib from binding, requiring a different inhibitor.
+---
 
 ## Exercises
 
-1. **(Understand)** For each mechanism of activation — point mutation, amplification, translocation — name one oncogene example from this chapter and state in one sentence what the alteration does to the protein.
+**Warm-up**
 
-2. **(Apply)** A tumor carries a *KRAS* G12D mutation. Explain, step by step, why a drug that blocks the RAS GTP-binding pocket the way imatinib blocks ABL has historically been hard to design, and why a G12C-specific covalent inhibitor became possible while a G12D one was harder. Tie your answer to the chemistry of the mutated residue.
+1. *[Recall — moderate]* For each mechanism of oncogene activation — point mutation, gene amplification, and chromosomal rearrangement — name one canonical example from this chapter and state in one sentence what the alteration does to the protein's activity. Your answer should distinguish between changes that alter the protein's structure and changes that increase the amount of a normal protein.
+*What this tests: whether you can connect activation mechanism to molecular consequence — not just list examples.*
 
-3. **(Apply / Produce)** Draw a mechanism map for HER2-amplified breast cancer with four boxes: *normal regulation → cancer alteration → cellular phenotype → therapeutic intervention*. Label the molecule, the mechanism (amplification), the phenotype (excess proliferative signaling), and the drug (trastuzumab). Then add a fifth box for a plausible resistance mechanism.
+2. *[Recall — moderate]* Explain in three sentences why oncogene mutations are dominant at the cellular level — why a single mutant allele is sufficient to drive the cancer phenotype — and contrast this with the two-hit logic that applies to tumor suppressors.
+*What this tests: gain-of-function versus loss-of-function logic; applying the correct genetic model to the correct class of cancer gene.*
 
-4. **(Analyze)** Classify each statement as a *definition*, a *mechanism*, an *epidemiological association*, or a *therapeutic implication*: (a) "KRAS is mutated in ~90% of pancreatic cancers." (b) "A codon-12 substitution slows GTP hydrolysis." (c) "An oncogene is an activated proto-oncogene." (d) "BCR-ABL-positive CML responds to imatinib."
+3. *[Recall — moderate]* Describe the RAS switch cycle: what loads it into the active state, what resets it to inactive, and what mutation at codon 12 does to that cycle. Name the two major downstream signaling cascades that active RAS feeds.
+*What this tests: mechanistic understanding of GTPase biochemistry — the molecular basis of the "stuck accelerator," not just the analogy.*
+
+**Application**
+
+4. *[Apply — moderate-hard]* A tumor carries a *KRAS* G12D mutation. Explain step by step why a competitive inhibitor targeting the GTP-binding site has historically been impossible to develop, and why a covalent inhibitor targeting the G12C mutant became possible while G12D required a different approach. Your answer should name the chemical property of each mutant residue that determines what chemistry is available.
+*What this tests: translating the biochemistry of the RAS switch into the constraints on drug design — moving from mechanism to therapeutic implication.*
+
+5. *[Apply — moderate-hard]* A 48-year-old woman with HER2-amplified breast cancer responds to trastuzumab (an antibody that blocks HER2) but progresses after fourteen months. Resequencing shows the HER2 amplification is unchanged. Generate two distinct resistance mechanisms that could explain the progression without any change in HER2 status, and for each name a rational next therapeutic approach.
+*What this tests: applying the bypass-track and downstream-reactivation resistance logic to a specific oncogene context; distinguishing target-level from pathway-level escape.*
+
+6. *[Apply — hard]* Compare two lung adenocarcinoma patients: Patient A has an *EGFR* exon-19 deletion as a truncal, clonal driver (present in essentially all tumor cells); Patient B has the same deletion in only a subset of cells (a subclonal alteration), with other subclones driven by *KRAS* G12C. Both start osimertinib. Predict the depth and durability of response for each, explaining your prediction using both the oncogene addiction concept and the clonal architecture of each tumor.
+*What this tests: integrating oncogene biology with the clonal evolution framework from Chapter 8; understanding that addiction applies to the tumor population, not just individual cells.*
+
+**Synthesis**
+
+7. *[Synthesis — hard]* Build a mechanism map for Burkitt lymphoma using four nodes: (1) the normal regulation of *MYC* expression in B cells; (2) the t(8;14) translocation and what it does to that regulation; (3) the resulting cellular phenotype; (4) one therapeutic approach that targets a dependency created by chronic MYC overexpression rather than MYC itself. Label each arrow with the molecular mechanism linking the nodes. Then write two sentences explaining why targeting MYC directly is difficult and why the indirect strategy at node 4 is theoretically sound.
+*What this tests: applying the enhancer-hijacking mechanism to a transcription-factor oncogene; understanding indirect targeting logic for undruggable oncogenes.*
+
+8. *[Synthesis — hard]* The BCR-ABL T315I mutation in CML and the EGFR T790M mutation in lung adenocarcinoma are both called "gatekeeper" mutations. Explain what structural feature these mutations share, why they arise under targeted therapy, and why they are almost always present as pre-existing resistant clones rather than arising de novo during treatment. Then explain what the existence of pre-existing gatekeeper mutations implies for the design of first-line therapy in oncogene-addicted cancers.
+*What this tests: integrating resistance mechanism, clonal evolution logic, and therapeutic design — connecting oncogene biology to the evolutionary framework of Chapter 8.*
+
+**Challenge**
+
+9. *[Challenge — very hard]* The "Still Puzzling" section asks why the same *KRAS* G12D mutation drives aggressive, nearly untreatable pancreatic cancer but is less common and less dominant in other tissue types. Design a research program — using cell lines, organoids, mouse models, and human tumor data — that would systematically test which tissue-specific factors determine whether an oncogenic *KRAS* mutation transforms a cell, and what those factors imply for tissue-specific therapy. Specify the experimental logic at each stage, the confounders you would need to control, and the finding that would most dramatically change current clinical strategy for pancreatic cancer if it turned out to be true.
+*What this tests: moving from a mechanistic puzzle to a translational research design; reasoning about tissue context as a modifier of oncogene function.*
+
+---
 
 ## What Would Change My Mind
 
-The chapter's central claim is that oncogene activation is gain-of-function and dominant — one altered allele drives the phenotype. A finding that would force revision: convincing evidence that the canonical oncogenic alterations (KRAS G12, BCR-ABL, HER2 amplification) routinely require *biallelic* inactivation of the normal copy to transform cells, or that single-allele oncogene activation reproducibly fails to confer a growth advantage in well-controlled systems. The transfection assays that found the first human oncogene specifically detected single-allele dominant transformation; a robust failure to replicate that result across modern model systems would undermine the gain-of-function framework.
+The chapter's central claim is that oncogene activation is gain-of-function and dominant — one altered allele drives the phenotype. A finding that would force revision: convincing evidence that the canonical oncogenic alterations — KRAS G12, BCR-ABL, HER2 amplification — routinely require biallelic inactivation of the normal copy to transform cells, or that single-allele oncogene activation reproducibly fails to confer a growth advantage in well-controlled systems. The transfection assays that identified the first human oncogene specifically detected single-allele dominant transformation; a robust failure to replicate that result across modern model systems would undermine the gain-of-function framework.
 
 ## Still Puzzling
 
-- Why do some oncogenes (KRAS, MYC) remain so hard to drug directly even though we have known their sequence for decades, while others (BCR-ABL, EGFR) yielded almost immediately? Is "druggability" a property of the protein, the pathway, or our chemistry?
-- Why does the same mutation (KRAS G12D) drive aggressive pancreatic cancer but is far less common in other tissues — what tissue context determines whether a stuck accelerator transforms a cell?
-- When a cancer escapes targeted therapy by phenotypic switching rather than mutation, is the change genetic, epigenetic, or both? This question hands directly to Chapters 7 and 8 on epigenetic reprogramming.
+- Why do some oncogenes (KRAS, MYC) remain so hard to drug directly even though we have known their sequence for decades, while others (BCR-ABL, EGFR) yielded almost immediately? Is druggability a property of the protein structure, the pathway architecture, or the chemistry we have available?
+- Why does the same mutation — KRAS G12D — drive aggressive pancreatic cancer but is far less common in other tissues? What tissue context determines whether a stuck accelerator transforms a cell, and how much of that context is epigenetic rather than genetic?
+- When a cancer escapes targeted therapy by phenotypic switching rather than mutation, is the change genetic, epigenetic, or both? This question hands directly to the following chapters on epigenetic reprogramming.
 
 ## References
 
 - National Cancer Institute. *The Genetics of Cancer.* https://www.cancer.gov/about-cancer/causes-prevention/genetics
 - National Cancer Institute. *What Is Cancer?* https://www.cancer.gov/about-cancer/understanding/what-is-cancer
-- Hino, O., et al. *The two-hit hypothesis, the driver of cancer.* Cancer Science, 2017. https://onlinelibrary.wiley.com/doi/10.1111/cas.13116
+- Hino, O., et al. (2017). The two-hit hypothesis, the driver of cancer. *Cancer Science.* https://onlinelibrary.wiley.com/doi/10.1111/cas.13116
 - NCBI Bookshelf. *The Development and Causes of Cancer.* https://www.ncbi.nlm.nih.gov/books/NBK9963/
-- Hanahan, D. *Hallmarks of Cancer: New Dimensions.* Cancer Discovery, 2022. https://aacrjournals.org/cancerdiscovery/article/12/1/31/675608
+- Hanahan, D. (2022). Hallmarks of Cancer: New Dimensions. *Cancer Discovery*, 12, 31–46.
 - NCBI Bookshelf. *Molecular Biology of the Cell.* https://www.ncbi.nlm.nih.gov/sites/books/n/mboc4/
-
-## Prompts
-
-*No figures have been generated for this chapter yet.*
