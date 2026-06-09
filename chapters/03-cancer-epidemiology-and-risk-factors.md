@@ -1,122 +1,126 @@
-# Cancer Epidemiology and Risk Factors
+# Chapter 3 — Cancer Epidemiology and Risk Factors
+*How to read the prior probability that a shadow is malignant — and where in the chain you could have interrupted it.*
 
-## Learning Objectives
+The radiologist, the surgeon, and the oncologist all see the same shadow on the chest scan. They read it differently from how they would read the identical shadow in a different patient — not because the image looks different, but because the man attached to it has a 40 pack-year smoking history and spent two decades around asbestos insulation. The prior probability that this shadow is cancer is far higher in this man than in a lifelong non-smoker with no occupational exposure. That prior is what epidemiology gives you. Not the diagnosis — the probability before the biopsy.
 
-By the end of this chapter you should be able to:
-
-- **Distinguish** raw case counts from age-standardized rates, and explain why an aging population raises cancer counts even when individual risk is stable.
-- **Explain** how genes and environment jointly determine cancer risk, and why treating them as mutually exclusive is misleading.
-- **Apply** causal-inference reasoning (the Bradford Hill criteria) to evaluate whether a risk-factor association is causal.
-- **Analyze** how a named exposure produces molecular damage that elevates cancer risk, and identify the prevention point that interrupts it.
-
-## Opening Case
-
-A 65-year-old man arrives with a lung mass on a chest scan. He has a 40 pack-year smoking history and spent two decades around asbestos insulation. The radiologist, the surgeon, and the oncologist all read the same image differently from how they would read it in a lifelong non-smoker with no occupational exposure — not because the shadow looks different, but because the *prior probability* that this shadow is cancer is far higher in this man.
-
-Here is the trap the case sets. It is tempting to convert that elevated risk into blame — to treat the diagnosis as the predictable wage of a personal choice. But two of his biggest risk factors behave very differently. Smoking was, in part, a voluntary exposure; asbestos was a structurally imposed one — a workplace hazard he could not see, did not choose, and was rarely warned about. Both raise risk through the same kind of mechanism: molecules that damage DNA, mutations that accumulate over decades. Epidemiology's job is not to assign blame. It is to give the prior probability — *given these exposures, this age, this history, what is the chance this is cancer?* — and to identify where the chain could have been interrupted.
-
-This chapter builds the tools behind that prior: the global burden of cancer, how genes and environment interact, the major modifiable risk factors, and the rules for deciding when an association is a cause.
-
-## Core Concepts
-
-### Burden and rates
-
-Epidemiology supplies the denominator. **Incidence** is new cases per population per year; **mortality** is deaths; **prevalence** is people living with the disease. The crucial distinction is between raw **counts** and **age-standardized rates** — rates adjusted so that populations with different age structures can be compared. Because cancer is overwhelmingly a disease of age, an aging population produces more cancer *cases* even if each person's age-specific risk is unchanged. Confusing the two is the most common quantitative error in reading cancer statistics.
-
-Globally in 2022, the International Agency for Research on Cancer (IARC) estimated about 20 million new diagnoses and 9.7 million deaths, drawn from the GLOBOCAN database compiling registries from over 185 countries (IARC, 2024). These are the best numbers available — and imperfect: registries are comprehensive in high-income countries and sparse in many low- and middle-income ones, so the latter figures are best-effort extrapolations. The top cancers by incidence were lung, breast, colorectal, prostate, and stomach; lung was the leading killer (about 1.8 million deaths). The U.S. picture, from the American Cancer Society, runs around 2 million new cases and roughly 600,000 deaths annually (ACS, 2026).
-
-Risk rises sharply with age: the probability that any single cell accumulates enough mutations to transform in one year is tiny, but over seventy years the chance that *some* cell does so is substantial. This is also why a "war on cancer" framing oversimplifies — you can shift the curve, but as long as people live long enough, some cells will accumulate the wrong mutations.
-
-### Risk is causal probability, not blame
-
-A **risk factor** is anything that shifts the probability of disease — an exposure, an inherited variant, an infection, a structural condition. The chapter insists on separating biological causation from moral blame, because the slide into "lifestyle blame" is easy and analytically wrong. People do not get cancer because they are bad; cells accumulate mutations, and the accumulation rate depends on exposures — some voluntary, many not. Tobacco is a high-confidence voluntary exposure; occupational asbestos is a structurally mediated one. Both are causes; only one is a choice in any meaningful sense.
-
-How do we decide an association is *causal* and not coincidental? The **Bradford Hill criteria** (Hill, 1965) are the working rules: strength of association, consistency across studies, specificity, correct temporality (cause precedes effect), a biological gradient (dose–response), plausibility, coherence with known biology, experimental evidence, and analogy. Smoking and lung cancer satisfy all of them — a roughly 20-fold relative risk in heavy smokers, replicated across dozens of independent cohorts, with a clean dose–response and a known mechanism (carcinogens binding DNA). That is not an association. It is a cause.
-
-### Genes and environment interact
-
-The dichotomy "genes versus environment" is the cleanest place in epidemiology to find a misleading question. The honest answer is *both, interacting*. Roughly 5–10% of cancers are driven primarily by inherited **high-penetrance** mutations — variants that, if you carry one, raise lifetime risk dramatically (NCI, *Risk Factors / Genetics*). *BRCA1* and *BRCA2* are the famous examples: a pathogenic *BRCA1* variant carries a lifetime breast-cancer risk on the order of 65–80% and ovarian risk of about 40–60%, varying by mutation and other factors. *TP53* (Li-Fraumeni), *APC* (familial adenomatous polyposis), the Lynch-syndrome mismatch-repair genes, *RB1*, *VHL*, and *PTEN* are other high-penetrance genes. Below them are **moderate-penetrance** variants (*CHEK2*, *PALB2*, *ATM*) that meaningfully but less dramatically raise risk, and **low-penetrance** common variants identified by genome-wide association studies, each contributing a small effect that aggregates into a **polygenic risk score**.
-
-The other 90–95% of cancers are driven by **somatic** mutations — acquired over a lifetime, usually from environmental exposure. The key insight: environment acts *through* the genome. A carcinogen leaves a **mutational signature** — a recognizable pattern of base changes — that modern genomics can read out of a tumor to reconstruct what the cell was exposed to. The germline mutation sets the stage; the environment fires the gun. A *BRCA1* carrier who drinks heavily and uses estrogen replacement has a different trajectory from one who does not. The opening case's patient layers both: whatever his inherited baseline, tobacco and asbestos supplied decades of DNA-damaging exposure.
-
-### The major modifiable exposures
-
-**Tobacco** is the largest preventable cause of cancer death in history — roughly 22% of cancer deaths worldwide, about 30% in the U.S. (IARC, *European Code Against Cancer: Tobacco*). Smoke contains over 70 known human carcinogens (benzo[a]pyrene, N-nitrosamines, others) that bind DNA, form adducts, and cause replication errors that, over decades, converge on genes like *TP53*, *KRAS*, and *EGFR* in lung cells. The dose–response is steep: heavy smokers carry roughly 20-fold lung-cancer risk, and even secondhand smoke raises risk by about 25%. Quitting before 40 returns risk to nearly never-smoker levels. Vaping's long-term cancer risk is not yet characterized by 30 years of cohort data; the honest summary is "less carcinogenic than smoking, not as safe as breathing air."
-
-**Alcohol** causes about 4% of cancers (mouth, throat, esophagus, liver, breast, colon). Ethanol is metabolized to acetaldehyde, a DNA-binding carcinogen. Even moderate drinking raises breast-cancer risk — roughly 7–10% per daily drink in meta-analysis — which the old "one drink a day for your heart" message badly underweighted.
-
-**Obesity** is causally linked to at least 13 cancers and is now the second-largest modifiable risk factor in high-income countries after tobacco. Adipose tissue is an endocrine organ: excess fat raises circulating estrogen, elevates insulin and IGF-1 (which signal through proliferation-promoting pathways — the PI3K/AKT axis of Chapter 1), and sustains chronic low-grade inflammation. Crucially, obesity is downstream of food access, food economics, and city design, not merely "lifestyle choice."
-
-**Infections** cause about 13% of cancers worldwide and are among the cleanest prevention targets (NCI, *Infectious Agents*). High-risk **HPV** (types 16 and 18) causes essentially all cervical cancer and many oropharyngeal and anal cancers; the HPV vaccine prevents the initiating infection, and Australia is on track to effectively eliminate cervical cancer (NCI, *HPV and Cancer*). **Hepatitis B and C** cause liver cancer (HBV preventable by vaccine, HCV now curable with antivirals). ***Helicobacter pylori*** causes most stomach cancers and gastric MALT lymphoma through chronic inflammation, and is curable with a short antibiotic course (NCI, *H. pylori*). **Epstein-Barr virus** is implicated in Burkitt and Hodgkin lymphoma and nasopharyngeal carcinoma. **HIV** enables cancers indirectly by suppressing immune surveillance.
-
-**Radiation** damages DNA directly: ionizing radiation (X-rays, gamma, particle radiation) breaks strands, with risk rising roughly linearly with dose (the atomic-bomb survivor Life Span Study is the classic source). Radon is the second leading cause of lung cancer after smoking. Non-ionizing **UV** causes pyrimidine dimers (the lesion of Chapter 1) and most skin cancers; tanning beds are IARC Group 1 carcinogens.
-
-**Occupational and environmental exposures** were largely identified through occupational epidemiology — workers in specific industries developing specific cancers at elevated rates. Asbestos and mesothelioma is the canonical case, with a 30–40 year latency; benzene and acute myeloid leukemia is another; fine particulate air pollution (PM2.5) is now an IARC Group 1 carcinogen. **Aflatoxins** — mycotoxins contaminating stored grains — are Group 1 carcinogens compounding liver-cancer risk in parts of Africa and East Asia (IARC, *Mycotoxins*).
-
-### Disparities
-
-Cancer outcomes are unequal within and between countries, and most of the gap is structural, not biological. In the U.S., Black Americans have higher cancer mortality than white Americans for most cancer types — driven largely by access: less screening, later-stage diagnosis, less guideline-concordant treatment, less specialty referral. Some biological differences are real (more aggressive triple-negative breast cancer and lethal prostate cancer in people of African ancestry), but the dominant signal is the healthcare system delivering different care to different people. Globally the gap is starker: low- and middle-income countries account for about 70% of cancer deaths but a fraction of research funding; childhood cancer survival is around 20% there versus over 80% in high-income countries — identical biology, unequal access.
-
-## Worked Example
-
-**Situation.** Two newspaper claims cross your desk on the same day: (a) "Processed meat causes cancer — IARC Group 1, same category as tobacco." (b) "Coffee causes cancer." You have to advise a public-health committee which to act on.
-
-**Analytical process.** The tempting wrong move is to rank by category label: both processed meat and (historically) coffee have appeared on IARC lists, so treat them as equivalent threats. This conflates *strength of evidence for causation* with *magnitude of risk* — two different things the Group 1/2A/2B system does not separate. IARC categories rate how *confident* we are that something can cause cancer, not how *much* it raises your risk.
-
-Apply Bradford Hill. Processed meat (Group 1, colorectal cancer): the relative-risk increase is modest — about 17% per 50 g/day — but the evidence is consistent across many studies, has a plausible mechanism (N-nitroso compounds, heterocyclic amines, heme iron), shows a dose gradient, and has the right temporality. Strong causal confidence, small per-person effect. Coffee: earlier observational associations were confounded (coffee drinkers smoked more), and once smoking was controlled, the association largely dissolved; IARC ultimately moved coffee off the "possibly carcinogenic" list and even noted a possible protective association for some cancers. The association failed consistency and, on closer look, temporality and specificity.
-
-A second dead end worth naming: the beta-carotene story. Observational data in the 1980s suggested it was protective against lung cancer. But randomized trials (ATBC, CARET) found supplementation *increased* lung-cancer risk in smokers — the observational signal had reversed under experiment. The Bradford Hill "experiment" criterion exists precisely to catch this.
-
-**Resolution.** Act on processed meat as a genuine but modest contributor (population-level messaging, not panic); do not treat coffee as a carcinogen. The Group 1 label means "we are confident it can cause cancer," not "it is as dangerous as tobacco."
-
-**The lesson.** Causal confidence and effect size are independent axes; sound risk advice requires both, and the Bradford Hill criteria — especially the experiment criterion — separate real causes from confounded associations.
-
-**The limit.** Bradford Hill is a guide, not an algorithm. For exposures where randomized trials are impossible (you cannot assign people to smoke), causal inference rests on observational evidence weighted across all criteria, and reasonable experts can disagree at the margins.
-
-## Common Misconceptions
-
-**"More cancer cases means higher individual risk."** Rising case *counts* can come entirely from a growing, aging population while age-standardized *rates* hold steady or fall. The opening case's patient is high-risk because of his exposures and age, not because national case counts are up. Always check whether a "cancer is rising" claim cites counts or rates.
-
-**"Cancer risk is mostly genetic" / "mostly bad luck."** Both overgeneralize. Only 5–10% of cancers are driven primarily by inherited high-penetrance mutations; most are somatic mutations shaped by age and exposure. And "bad luck" (random replication error) is real but is not a substitute for the large, modifiable contributions of tobacco, obesity, infection, and radiation [contested — see pantry flag on the bad-luck debate].
-
-**"Genetic and environmental causes are mutually exclusive."** They interact through the same molecular substrate. Environment acts by causing somatic mutations; an inherited DNA-repair defect amplifies the damage from any given exposure. A *BRCA* carrier plus a DNA-damaging exposure is layered risk, not an either/or — exactly the layering in the opening case.
-
-**"A risk factor means the patient is at fault."** Risk is causal probability, not blame. Many of the largest exposures — asbestos, air pollution, food environments — are structurally imposed. Reading the opening case as "he did this to himself" both misattributes the asbestos exposure and obscures where prevention policy should act.
-
-## Exercises
-
-1. **(Understand.)** Define incidence, mortality, prevalence, and age-standardized rate. Then explain in two sentences why a country's cancer counts can rise while its age-standardized rate falls.
-
-2. **(Apply.)** A claim states: "Drinking sugary soda causes pancreatic cancer." Evaluate it against at least five Bradford Hill criteria. For each, state what evidence you would need and whether the claim is likely to meet it. Conclude with a calibrated verdict.
-
-3. **(Analyze/Produce.)** Draw a mechanism-to-prevention map for one infection-driven cancer (HPV-cervical, HBV-liver, or *H. pylori*-gastric): exposure → molecular damage / chronic inflammation → cell-level consequence → the specific intervention (vaccine, antiviral, antibiotic, screening) that interrupts the chain. Label what stage each intervention acts at.
-
-4. **(Evaluate.)** Take the disparity finding that Black Americans have higher cancer mortality than white Americans for most cancers. Separate the plausible biological contributors from the structural ones, and propose the single intervention you think would close the largest share of the gap. Defend the choice.
-
-## What Would Change My Mind
-
-The chapter's central claim is that most cancer is not "bad luck" but reflects exposures acting through the genome, with a large modifiable fraction. The strongest finding that would force revision: rigorous evidence that the modifiable fraction is much smaller than current estimates — that, after fully accounting for age and stem-cell division number, the great majority of cancer variation is irreducible stochastic replication error not meaningfully alterable by prevention. Tomasetti and Vogelstein's stem-cell-division argument pushes in that direction and is genuinely contested [contested — see pantry flag]; a convincing demonstration that interventions on tobacco, obesity, and infection fail to move incidence at the population level — contradicting the natural experiments of declining smoking and HPV vaccination — would undercut the prevention-centered frame this chapter is built on.
-
-## Still Puzzling
-
-- How large *is* the irreducible "bad luck" fraction of cancer? The stem-cell-division debate remains open and consequential for how much we invest in prevention versus early detection.
-- Why do some carcinogens have apparent thresholds while others (ionizing radiation, on the standard model) act linearly from zero dose? The shape of low-dose risk curves is hard to measure and still argued.
-- How much of racial and geographic disparity is biological versus structural, and can the two even be cleanly separated when chronic stress and environment themselves alter tumor biology?
-
-## References
-
-- IARC. *Global cancer burden in 2022.* https://www.iarc.who.int/news-events/new-report-on-global-cancer-burden-in-2022-by-world-region-and-human-development-level/
-- American Cancer Society. *Cancer Facts & Figures 2026.* https://www.cancer.org/research/cancer-facts-statistics/all-cancer-facts-figures/2026-cancer-facts-figures.html
-- NCI. *Risk Factors for Cancer.* https://www.cancer.gov/about-cancer/causes-prevention/risk
-- NCI. *HPV and Cancer.* https://www.cancer.gov/about-cancer/causes-prevention/risk/infectious-agents/hpv-and-cancer
-- NCI. *Risk Factors: Infectious Agents.* https://www.cancer.gov/about-cancer/causes-prevention/risk/infectious-agents
-- NCI. *H. pylori and Cancer.* https://www.cancer.gov/about-cancer/causes-prevention/risk/infectious-agents/h-pylori-fact-sheet
-- IARC. *European Code Against Cancer: Tobacco and Cancer.* https://www.iarc.who.int/reference/european-code-against-cancer-4th-edition-tobacco-and-cancer/
-- IARC. *Mycotoxins as Human Carcinogens.* https://www.iarc.who.int/reference/mycotoxins-as-human-carcinogens-the-iarc-monographs-classification/
-- Hill, A. B. (1965). The Environment and Disease: Association or Causation? *Proc. R. Soc. Med.* 58, 295–300. [verify — Bradford Hill criteria, cited from archive chapter; not in pantry source bank]
+Here is the trap the case sets. It is tempting to convert elevated risk into blame: he smoked, he worked in a hazardous industry, he made choices. But those two risk factors behave very differently. Smoking was partly a voluntary exposure, shaped by addiction, advertising, and cultural norm. Asbestos was a structurally imposed hazard — invisible, unchosen, and for decades inadequately regulated. Both act through the same molecular mechanism: carcinogens that damage DNA, mutations that accumulate over decades. Epidemiology's job is not to evaluate what the patient deserves. It is to give the prior probability and to identify where in the chain the damage could have been interrupted.
 
 ---
 
-## Prompts
+### Why cancer counts lie, and what rates actually tell you
 
-*No figures have been generated for this chapter yet.*
+The first tool in cancer epidemiology is the ability to read a statistic without being misled by it. The key distinction is between raw **case counts** and **age-standardized rates**.
+
+**Incidence** is the number of new cases per unit of population per year. **Mortality** is deaths per unit of population per year. **Prevalence** is the number of people living with the disease at a given moment. Each answers a different question. But all three can be reported as raw counts or as rates, and the difference matters enormously.
+
+Cancer is predominantly a disease of age. The probability that any given cell in your body accumulates enough mutations to transform in a single year is very small. Over seventy years of replication, the probability that *some* cell does so becomes substantial. An aging population — one in which a larger fraction of people are over sixty than was true thirty years ago — will produce more cancer cases per year *even if every individual person's age-specific risk is unchanged*. The total count rises because there are simply more old people.
+
+Age-standardized rates correct for this by asking: if both populations had the same age structure, what would the rates be? When you read that cancer cases are rising in a country, the honest question to ask is whether age-standardized incidence rates are rising — or whether an aging population is producing more cases from unchanged per-person risk. Many headlines report the former while meaning the latter.
+
+The global numbers are useful context. The International Agency for Research on Cancer estimated roughly 20 million new diagnoses and 9.7 million cancer deaths worldwide in 2022, drawn from the GLOBOCAN registry data covering over 185 countries. The top cancers by incidence were lung, breast, colorectal, prostate, and stomach. Lung cancer was the leading cause of cancer death — about 1.8 million deaths. In the United States the American Cancer Society estimates approximately 2 million new cases and around 600,000 deaths annually. These numbers are the best available, and imperfect: registry data is comprehensive in high-income countries and estimated in many low- and middle-income ones. The global figures have wide error bars.
+
+---
+
+### Genes and environment are not alternatives
+
+The question "is this cancer genetic or environmental?" is asked constantly and answers nothing. The honest answer is that genetics and environment interact through the same molecular substrate, and treating them as mutually exclusive alternatives is the second major analytical error in cancer epidemiology, after confusing counts with rates.
+
+About 5–10% of cancers are driven primarily by inherited high-penetrance mutations — variants that, if you carry one, raise your lifetime risk substantially. *BRCA1* and *BRCA2* are the canonical examples. A pathogenic *BRCA1* variant carries a lifetime breast cancer risk on the order of 65–80% and a lifetime ovarian cancer risk around 40–60%. *TP53* mutations cause Li-Fraumeni syndrome, with broad cancer susceptibility across multiple organ sites. *APC* mutations cause familial adenomatous polyposis. The mismatch-repair genes — *MLH1*, *MSH2*, *MSH6*, *PMS2* — cause Lynch syndrome, the most common hereditary cancer predisposition, raising risks for colorectal and endometrial cancer and others. *RB1*, *VHL*, *PTEN*, *STK11* each define their own heritable syndromes.
+
+Below the high-penetrance mutations are moderate-penetrance variants (*CHEK2*, *PALB2*, *ATM*) that meaningfully raise risk but less dramatically. And below those are hundreds of common low-penetrance variants identified by genome-wide association studies, each shifting risk by a small amount — but aggregating into a **polygenic risk score** that is beginning to be used clinically to stratify screening decisions.
+
+The remaining 90–95% of cancers are driven by somatic mutations — variants that arise in cells during a person's lifetime, not inherited at birth. These are the mutations that accumulate from environmental exposure.
+
+The interaction between germline and environment is direct and important. Environment causes cancer by damaging DNA or disrupting the control of DNA replication. An inherited variant that impairs DNA repair amplifies the damage from any given environmental exposure. A *BRCA1* carrier exposed to ionizing radiation, or using hormone replacement therapy, or with chronic inflammation from another cause, is under layered risk that neither the genetics nor the exposure alone would predict. This is exactly the structure in the opening case: whatever inherited baseline our patient has, tobacco and asbestos supplied decades of additional DNA-damaging exposure on top of it.
+
+Modern genomics makes the interaction legible. Different carcinogens leave recognizable **mutational signatures** — patterns of base changes stamped into the tumor genome by the specific chemistry of the exposure. The UV signature is C→T transitions at dipyrimidines — the pyrimidine dimers from Chapter 1. The tobacco carcinogen signature is predominantly G→T transversions at specific trinucleotide contexts. Aflatoxin leaves G→T transversions at codon 249 of *TP53* with near-perfect specificity. Mismatch-repair deficiency leaves an extremely high density of mutations across the entire genome — the microsatellite instability signature. Reading the mutational signature in a tumor is, in a real sense, reading its exposure history. The genome records what happened to the cell.
+
+<!-- → [DIAGRAM: mutational signatures — four panels side by side. Panel 1: UV signature (C→T at CpC contexts, skin cancer); Panel 2: tobacco signature (G→T transversions, lung cancer); Panel 3: aflatoxin signature (G→T at TP53 codon 249, hepatocellular carcinoma); Panel 4: MMR deficiency signature (hypermutation across whole genome, colorectal cancer). Each panel: a simple bar chart of mutation types with the dominant pattern highlighted and the exposure labeled.] -->
+
+---
+
+### Tobacco: the largest preventable cause
+
+Tobacco causes roughly 22% of cancer deaths worldwide and approximately 30% in the United States. That figure — nearly one in three cancer deaths in the U.S. traceable to a single exposure — makes tobacco the largest modifiable cause of cancer death in recorded history.
+
+Cigarette smoke contains over 70 known human carcinogens. Among the most important are polycyclic aromatic hydrocarbons like benzo[a]pyrene, which bind to DNA and form bulky adducts that, when misrepaired or unrepaired, produce G→T transversions. N-nitrosamines are another major class, alkylating DNA at multiple positions. Over decades of inhalation, these carcinogens accumulate mutations in lung epithelial cells — hitting *TP53* first, then *KRAS*, then other drivers — until a cell has the combination to form a tumor. The dose–response is steep: heavy smokers carry roughly a 20-fold relative risk of lung cancer compared to never-smokers. Even secondhand smoke exposure raises lung cancer risk by approximately 25%.
+
+The cessation data is worth knowing precisely because it is more optimistic than most people expect. Quitting before age 40 returns lung-cancer risk to nearly never-smoker levels. The lung can clear the carcinogen burden; the cells that have not yet become malignant remain at risk only if they continue to be exposed. This is what makes tobacco both the clearest cause and the clearest prevention target in cancer epidemiology: the exposure is identifiable, the mechanism is understood, and removing the exposure has a measurable, proportional benefit.
+
+Vaping is the live uncertainty. The carcinogen concentration in vapor is lower than in cigarette smoke, and the long-term cancer risk is probably lower — but 30-year cohort data on vaping does not exist. "Less carcinogenic than smoking" and "safe" are different claims, and only the first is currently defensible.
+
+---
+
+### The major modifiable exposures, briefly
+
+**Alcohol** causes roughly 4% of cancers — mouth, throat, esophagus, liver, colon, and breast. The mechanism is ethanol's conversion to acetaldehyde, a reactive molecule that forms adducts with DNA and interferes with DNA methylation. The dose–response for breast cancer is approximately 7–10% increased risk per drink per day in meta-analysis. The old framing of "one drink per day is protective for cardiovascular disease" badly underweighted this cancer risk; the cardiovascular benefit is smaller and more contested than the cancer signal.
+
+**Obesity** is the second-largest modifiable risk factor in high-income countries, causally linked to at least 13 cancer types. Adipose tissue is not passive storage — it is an endocrine organ. Excess adiposity raises circulating estrogen (driving estrogen-receptor-positive breast and endometrial cancers), elevates insulin and IGF-1 (which signal through the PI3K/AKT proliferation axis), and sustains chronic low-grade inflammation (which you have already seen in Chapter 6 as a pro-carcinogenic environment). Obesity is downstream of food access, food economics, and the design of urban environments — not primarily of individual willpower.
+
+**Infections** cause approximately 13% of cancers globally, and they are among the most tractable prevention targets because the initiating agent is identifiable and often eliminable. High-risk HPV types 16 and 18 cause essentially all cervical cancer and a growing fraction of oropharyngeal, anal, and vulvar cancers — and the HPV vaccine prevents the initiating infection with high efficacy. Australia, with near-universal vaccination coverage, is on track to effectively eliminate cervical cancer as a public health problem within a generation. Hepatitis B is preventable by vaccine; hepatitis C is curable with direct-acting antivirals. Both cause hepatocellular carcinoma through decades of chronic liver inflammation. *H. pylori* is curable with a short antibiotic course and is the primary cause of gastric cancer. In each of these cases, the prevention point is the infection itself — decades before any cancer appears.
+
+**Radiation** damages DNA directly. Ionizing radiation — X-rays, gamma rays, particle radiation — breaks DNA strands, with cancer risk rising roughly linearly with cumulative dose from the evidence of atomic-bomb survivor follow-up studies. Radon, a naturally occurring radioactive gas that accumulates in poorly ventilated basements, is the second leading cause of lung cancer after smoking. UV radiation creates pyrimidine dimers — the signature lesion of skin cancer. Tanning beds are IARC Group 1 carcinogens; they emit UV at intensities comparable to or exceeding the midday sun.
+
+**Occupational and environmental exposures** were largely identified by observational epidemiology — workers in specific industries developing specific cancers at elevated rates, pointing investigators toward specific agents. Asbestos and mesothelioma is the canonical case: asbestos fibers lodged in the pleura persist for decades, producing chronic inflammation and eventually malignancy, with a latency of 30–40 years. Benzene causes acute myeloid leukemia. Fine particulate air pollution (PM2.5) became an IARC Group 1 carcinogen on the basis of consistent evidence across many countries for lung cancer risk in non-smokers living near major pollution sources. Aflatoxins — mycotoxins produced by *Aspergillus* molds contaminating stored grains — are Group 1 carcinogens for hepatocellular carcinoma, compounding HBV risk in parts of sub-Saharan Africa and East Asia.
+
+<!-- → [TABLE: major modifiable risk factors — columns: exposure, cancer types caused, approximate fraction of global cancer deaths, mechanism in one line, primary prevention strategy. Rows: tobacco, alcohol, obesity, HPV, HBV/HCV, H. pylori, ionizing radiation, UV, occupational/environmental exposures. Intended as a reference table; student should be able to generate the mechanism and prevention columns from chapter content.] -->
+
+---
+
+### How to decide whether an association is a cause
+
+The opening case involves a man with two risk factors and a mass. Epidemiology can say the mass is more likely cancer than it would be in a low-risk patient — but that prior probability rests on the claim that these associations are causal, not merely correlational. How do we know?
+
+The framework is the **Bradford Hill criteria**, proposed by Austin Bradford Hill in 1965 as a set of considerations for evaluating whether an observed statistical association reflects a genuine causal relationship. They are not an algorithm — Hill himself was explicit that no one criterion is sufficient and none is necessary — but they are a disciplined checklist for thinking about causation when randomized experiments are impossible.
+
+The criteria are: **strength** (a large relative risk is harder to explain away as confounding than a small one); **consistency** (the association replicates across independent studies, populations, and methods); **specificity** (the exposure is associated with a specific outcome, not every disease); **temporality** (exposure precedes disease — this is the one criterion Hill considered non-negotiable); **biological gradient** (a dose–response relationship); **plausibility** (a biologically credible mechanism exists); **coherence** (the association fits with known biology and natural history); **experiment** (when experimental manipulation of the exposure is available, it supports the inference); **analogy** (similar exposures cause similar effects).
+
+Smoking and lung cancer satisfies all of them. Relative risk of roughly 20-fold in heavy smokers. Replicated in dozens of independent cohorts across decades. Correct temporality: the cancer follows years of exposure. A clear dose–response: more pack-years, more risk. A known mechanism: carcinogens forming DNA adducts causing specific mutations. An experimental criterion: smoking cessation reduces risk in proportion to how long ago cessation occurred. This is not a statistical association. It is a cause.
+
+The criteria also diagnose failure. **The beta-carotene story** is one of the most instructive false positives in cancer epidemiology. Observational data in the 1980s consistently showed that people with high dietary beta-carotene had lower lung cancer rates. The association was strong, consistent, and plausible — antioxidants protecting against oxidative DNA damage. Supplements were developed. Then the randomized trials ran: the ATBC trial (Alpha-Tocopherol, Beta-Carotene Cancer Prevention Study) and the CARET trial (Beta-Carotene and Retinol Efficacy Trial) both found that supplemental beta-carotene *increased* lung cancer risk in smokers, by roughly 17–28%. The observational signal had been entirely backwards. What looked like protection was confounding: people who eat foods rich in beta-carotene have many other health-protective behaviors, and it was those behaviors — not the beta-carotene — that explained the lower cancer rates.
+
+The "experiment" criterion exists precisely to catch this. When an epidemiological finding cannot survive randomized intervention, the association was not causal in the way the observational data implied. Bradford Hill's criterion does not require that we randomize people to smoke — it asks that where experimental evidence is available, it should be weighed. Where it is not available (you cannot randomize people to 40-year occupational asbestos exposure), the inference rests on the other criteria, weighted together.
+
+<!-- → [DIAGRAM: Bradford Hill criteria as a diagnostic checklist — nine criteria listed with brief definitions; checkmarks for smoking/lung cancer (all nine satisfied); and a separate column showing the beta-carotene case (most criteria appeared satisfied from observational data, but the experiment criterion reversed the inference). This is a visual summary of how the criteria are applied, not a definitive rubric.] -->
+
+---
+
+### Disparities: unequal burden, structural causes
+
+Cancer outcomes are unequal across populations, and most of the gap is not biological. In the United States, Black Americans have higher cancer mortality than white Americans for most major cancer types. The dominant causes of the gap are structural: less access to preventive care and screening, later-stage diagnosis at presentation, less access to guideline-concordant treatment, and less specialty referral. A tumor caught at stage I is a different clinical problem from the same tumor caught at stage III — not because the biology changed, but because the healthcare system found it later.
+
+Some biological differences are real. Triple-negative breast cancer — which has fewer treatment targets and worse prognosis — is approximately twice as common in women of African ancestry as in women of European ancestry. Aggressive prostate cancer subtypes occur at higher frequency. These biological differences are genuine and worth investigating. They are not, however, the dominant driver of the mortality gap.
+
+Globally the disparity is starker. Low- and middle-income countries account for approximately 70% of cancer deaths but a fraction of cancer research funding and treatment infrastructure. Childhood cancer survival is around 80% in high-income countries and approximately 20% in low-income ones. The biology is identical. The infrastructure is not.
+
+The practical implication for prevention is that targeting the most common modifiable exposures — tobacco, infection, obesity — is particularly high-yield in settings with limited treatment capacity, because prevention prevents the need for expensive curative intervention that the system cannot provide at scale. HPV vaccination, H. pylori eradication, and tobacco control in low-income countries are cost-effective cancer interventions precisely because they act decades before any cancer appears, at a fraction of the cost of treating the cancers they prevent.
+
+---
+
+## Exercises
+
+**Warm-up**
+
+1. *(Recall — difficulty: low)* Define incidence, mortality, prevalence, and age-standardized rate. Then explain in two sentences why a country's cancer case counts can rise over twenty years while its age-standardized incidence rate falls. *What this tests: the counts-versus-rates distinction before applying it to real statistics.*
+
+2. *(Recall — difficulty: low)* What percentage of cancers are driven primarily by inherited high-penetrance mutations, and what does that imply about the fraction driven by somatic mutations from environmental exposure? Name three high-penetrance cancer predisposition genes and the cancers they predispose to. *What this tests: the germline versus somatic framing and baseline quantitative literacy about the genetic fraction.*
+
+3. *(Recall — difficulty: low)* Name the three infection-driven cancers for which a primary prevention intervention (vaccine, antibiotic, or antiviral) exists and state the intervention for each. *What this tests: whether the student can connect specific agents to specific cancers and to specific prevention strategies.*
+
+**Application**
+
+4. *(Apply — difficulty: medium)* A headline reads: "New study links drinking sugary soda to pancreatic cancer." Evaluate this claim against five Bradford Hill criteria. For each criterion, state what evidence you would need and whether the claim is likely to meet it. Conclude with a calibrated verdict — not "proven" or "disproven" but a statement of causal confidence and what evidence would change it. *What this tests: systematic application of the Bradford Hill framework to an unfamiliar association claim.*
+
+5. *(Apply — difficulty: medium)* A *BRCA1* carrier asks her physician whether her risk is "genetic or environmental." Explain in plain terms why this is a false dichotomy, using her specific mutation and two specific environmental exposures to illustrate how the interaction works at the molecular level. *What this tests: the gene-environment interaction framing applied to a clinical scenario.*
+
+6. *(Apply — difficulty: medium)* Draw a mechanism-to-prevention map for one infection-driven cancer of your choice (HPV/cervical, HBV/hepatocellular, or *H. pylori*/gastric). The map should show: initiating exposure → molecular damage or chronic inflammation → cell-level consequence → clinical cancer. Mark on the chain where each available preventive intervention acts, and label what it prevents. *What this tests: causal chain reasoning and the identification of intervention points before clinical disease.*
+
+**Synthesis**
+
+7. *(Synthesize — difficulty: high)* The beta-carotene trials reversed a consistent observational finding. Using Bradford Hill, identify which criteria the original observational data appeared to satisfy, which criterion the trials addressed, and what the reversal implies about the causal status of the original association. Then generalize: what class of bias could produce a strong, consistent, plausible observational association that disappears or reverses in a trial? *What this tests: integration of Bradford Hill with confounding and experimental evidence, and the epistemological lesson of a major false positive.*
+
+8. *(Synthesize — difficulty: high)* Black Americans have higher cancer mortality than white Americans across most cancer types. Separate the plausible biological contributors from the structural contributors, cite the evidence that distinguishes them, and then propose the single intervention — at any level from clinical to policy — you think would close the largest share of the gap. Defend the choice mechanistically and in terms of feasibility. *What this tests: causal attribution between biology and structure, and the application of epidemiological reasoning to health equity.*
+
+**Challenge**
+
+9. *(Challenge — difficulty: high)* The Tomasetti and Vogelstein papers argue that a large fraction of cancer is attributable to random replication errors — "bad luck" — rather than inherited or environmental causes, and that this limits what prevention can achieve. Evaluate this argument: what does it claim, what evidence supports it, what evidence challenges it, and what would it imply for how a public health system should allocate resources between prevention, early detection, and treatment? State clearly where you think the evidence is genuinely unsettled and where it is not. [contested] *What this tests: engagement with a live scientific controversy, evidence evaluation, and the translation of epidemiological findings into resource-allocation reasoning.*
