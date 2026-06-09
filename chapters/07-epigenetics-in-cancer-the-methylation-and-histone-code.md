@@ -1,121 +1,142 @@
-# Epigenetics in Cancer: The Methylation and Histone Code
+# Chapter 7 — Epigenetics in Cancer: The Methylation and Histone Code
 
-## Learning Objectives
+Two patients have glioblastoma. Same diagnosis, same surgery, same radiation, same chemotherapy — temozolomide, a drug that damages tumor DNA by attaching methyl groups to guanine bases. One survives far longer than the other. Their tumors look identical under the microscope and carry overlapping mutations. The decisive difference is a chemical mark on a single gene's promoter.
 
-By the end of this chapter, you should be able to:
+The gene is *MGMT*. Its protein's only job is to remove exactly the kind of DNA damage temozolomide causes. In the longer-surviving patient, the *MGMT* promoter is hypermethylated — silenced by a methyl group added to cytosine in the DNA — so the repair protein is never made, the drug's damage accumulates, and tumor cells die. In the other patient, *MGMT* is expressed, the damage is repaired, and the drug is largely wasted. No gene sequence differs between them. No mutation. The decisive variable is a layer of regulation written *on top of* the DNA.
 
-- **Define** epigenetics precisely and **explain** why heritable changes in gene expression can occur without any change to DNA sequence.
-- **Describe** the paradoxical methylation pattern of cancer — global hypomethylation alongside focal CpG-island hypermethylation — and **explain** how each contributes to the cancer phenotype.
-- **Interpret** MGMT promoter methylation in glioblastoma as a predictive biomarker, **tracing** the mechanism from methyl mark to drug response.
-- **Distinguish** the writer, eraser, and reader enzymes of the histone code and **identify** how their mutation reshapes the transcriptome in cancer.
-- **Evaluate** the claim that epigenetic changes are reversible and therefore easily drugged, naming the conditions under which reversibility helps and where it does not.
+This is the central fact of cancer epigenetics: cancer is not only a disease of broken genes but of misread ones. This chapter explains how that misreading happens, and whether reversing it is as tractable as it first appears.
 
-## Opening Case
+---
 
-Two patients have the same diagnosis — glioblastoma, the most common and most lethal primary brain cancer — and receive the same treatment: surgery, radiation, and temozolomide, a drug that damages tumor DNA by attaching methyl groups to guanine bases. One patient survives far longer than the other. Their tumors look identical under the microscope and carry overlapping mutations. The difference is a chemical mark on a single gene's promoter.
+## What epigenetics means, precisely
 
-That gene is *MGMT*. Its protein removes exactly the kind of DNA damage temozolomide causes. In the longer-surviving patient, the *MGMT* promoter is **hypermethylated** — chemically silenced — so the repair protein is not made, the drug's damage accumulates, and tumor cells die. In the other patient, *MGMT* is expressed, the damage is repaired, and the drug is largely wasted. No gene sequence differs between them. The decisive variable is a layer of regulation sitting *on top of* the DNA (Stupp protocol, summarized in NCI, *What Is Cancer?*) [verify].
+A neuron, a liver cell, and a skin cell carry the same roughly 20,000 protein-coding genes. What distinguishes them is not DNA sequence — it is the **epigenome**: the set of chemical marks layered onto DNA and onto the histone proteins that package it, controlling which genes are read and which are silenced.
 
-This is the central fact of cancer epigenetics: cancer is not only a disease of broken genes but of *misread* ones. This chapter explains how that misreading happens through DNA methylation and the histone code, and whether we can reverse it.
+**Epigenetics** refers to heritable changes in gene expression that do not involve changes to DNA sequence. The marks are chemical: methyl groups on cytosine bases, acetyl and methyl groups on histone tails. And they persist through cell division. The system has memory because the marks are enzymatically maintained. After DNA replicates, the new strand carries no methylation. The maintenance methyltransferase DNMT1 recognizes the resulting hemimethylated state — one strand marked, one not — and methylates the daughter strand to match the parent. A skin cell stays a skin cell across hundreds of divisions because its epigenetic state is faithfully copied each time the genome is copied.
 
-## Core Concepts
-
-### What "epigenetics" actually means
-
-A neuron, a liver cell, and a skin cell carry the same ~20,000 protein-coding genes, yet they are different cell types doing different work. What distinguishes them is not DNA sequence but the **epigenome** — the set of chemical marks layered onto DNA and onto the histone proteins that package it, controlling which genes are read and which are silenced.
-
-**Epigenetics** refers to heritable changes in gene expression that do not involve changes to the DNA sequence. The marks are chemical — methyl groups on cytosine bases, acetyl and methyl groups on histone tails, ubiquitin tags — and crucially they **propagate through cell division**. The system has memory because the marks are *enzymatically maintained*: after DNA replicates, the new strand carries no methylation, and the maintenance methyltransferase DNMT1 recognizes this hemimethylated state and methylates the daughter strand to match the parent (Signal Transduction and Targeted Therapy, 2023). A skin cell stays a skin cell across hundreds of divisions because its epigenetic state is faithfully copied.
-
-This memory is what makes epigenetics matter for cancer. Once a tumor suppressor is silenced by methylation, the silencing is inherited by every daughter cell without any new mutation. The lineage drifts from its tissue identity, and the changes accumulate the way mutations do — except that, in principle, they are reversible.
-
-The three pillars of epigenetic regulation are DNA methylation, histone modifications, and noncoding RNAs. This chapter covers the first two; Chapter 8 covers the third and the systems-level picture.
+That memory is why epigenetics matters for cancer. Once a tumor suppressor is silenced by methylation, the silencing is inherited by every daughter cell without any new mutation required. The lineage drifts from its tissue identity, and the changes accumulate the way mutations do — except that, in principle, they are reversible. The gene sequence is intact. The book is still there; someone has taped the covers shut.
 
 <!-- → [DIAGRAM: same genome, three cell types — identical DNA sequence with different methylation/histone-mark patterns producing neuron, hepatocyte, skin cell] -->
 
-### DNA methylation and its cancer paradox
+---
 
-In mammals, DNA methylation occurs overwhelmingly at **CpG dinucleotides** — a cytosine followed by a guanine — where a methyl group is added to the cytosine (producing 5-methylcytosine). Because CpG is symmetric across the two strands, the mark survives replication: DNMT1 reads the hemimethylated site and restores it.
+## DNA methylation and cancer's paradox
 
-Most CpG sites in the genome are methylated — partly to keep repetitive, transposon-derived DNA silent. The exceptions are **CpG islands**: short, CpG-dense regions near the transcription start sites of most genes, normally kept *unmethylated* so transcription can proceed. When a CpG island becomes hypermethylated, the gene downstream is reliably silenced.
+In mammals, DNA methylation occurs overwhelmingly at **CpG dinucleotides** — cytosine followed by guanine — where a methyl group is added to the cytosine. Because CpG is palindromic across the two strands, the mark survives replication: DNMT1 reads the hemimethylated site and restores it.
 
-In cancer, two opposite things happen to methylation, and this only looks paradoxical at first.
+Most CpG sites in the genome are methylated — necessary to keep repetitive, transposon-derived sequences silent and the genome stable. The exceptions are **CpG islands**: short, CpG-dense stretches near the transcription start sites of most genes, normally kept unmethylated so transcription can proceed. When a CpG island becomes hypermethylated, the gene downstream is reliably silenced.
 
-First, **global hypomethylation**. The bulk genome of a cancer cell is *less* methylated than normal, especially at repetitive and intergenic regions. Transposable elements that should be silent reactivate; the genome becomes more fragile and prone to recombination; chromosomal instability rises. This was the first epigenetic abnormality observed in human tumors (Feinberg and Vogelstein, 1983).
+In cancer, two opposite things happen to methylation simultaneously — and the paradox dissolves once you see that they involve different machinery and different regions of the genome.
 
-Second, **focal hypermethylation of CpG islands** at specific tumor suppressor promoters. *CDKN2A* (p16) is silenced this way in many cancers; *MLH1* is methylated in ~15 percent of sporadic colorectal cancers, phenocopying the germline mismatch-repair loss of Lynch syndrome; *BRCA1* is methylated in some sporadic ovarian and breast cancers, mimicking the inherited mutation from Chapter 6. The two patterns reflect different machinery — failing maintenance on the bulk genome, selected silencing at specific promoters — and both favor the cancer.
+**Global hypomethylation** of the bulk genome: the overall methylation level of a cancer cell is *lower* than normal, especially at repetitive and intergenic regions. Transposable elements that should be silent reactivate. The genome becomes more prone to recombination. Chromosomal instability rises. This was the first epigenetic abnormality observed in human tumors, described by Feinberg and Vogelstein in 1983 — before the promoter hypermethylation story was fully developed.
 
-What makes promoter methylation therapeutically interesting is that, unlike a mutation, it is **reversible**. The gene sequence is intact; remove the methyl groups and transcription can resume. DNA methyltransferase inhibitors — azacitidine and decitabine — are cytosine analogs that incorporate into DNA, trap DNMT1 in a covalent complex, and let the genome lose methylation over a few divisions, reactivating some silenced genes. Azacitidine, approved for myelodysplastic syndrome in 2004, was the first epigenetic cancer drug; both are now standard for MDS and elderly AML.
+**Focal hypermethylation at CpG islands** at specific tumor suppressor promoters: individual cancer-relevant genes are silenced not by mutation but by methyl marks selectively deposited on their promoters. *CDKN2A* (encoding the CDK inhibitor p16) is silenced this way in many cancers. *MLH1* is methylated in roughly 15% of sporadic colorectal cancers — phenocopying the germline mismatch-repair loss of Lynch syndrome, producing microsatellite instability through an epigenetic route rather than a mutational one. *BRCA1* is methylated in some sporadic ovarian and breast cancers, mimicking the inherited mutation. Same functional outcome, different mechanism, no sequence change.
 
-### The histone code
+The two patterns reflect different machinery — failing maintenance on the bulk genome, versus selected silencing at specific promoters — and both favor the cancer. One destabilizes the genome broadly; the other removes specific brakes on proliferation.
 
-The other major layer of marks is on the histones. The structural unit of chromatin is the **nucleosome** — ~147 base pairs of DNA wrapped around a histone octamer (two each of H2A, H2B, H3, H4). The histones are not passive packaging: their N-terminal tails project outward and carry a dense set of chemical marks that are *written* by one set of enzymes, *erased* by another, and *read* by a third. Different marks correlate with different transcriptional states (Signal Transduction and Targeted Therapy, 2023).
+What makes promoter methylation therapeutically interesting is the reversibility. Remove the methyl groups and transcription can resume. **DNA methyltransferase inhibitors** — azacitidine and decitabine — are cytosine analogs that incorporate into replicating DNA, trap DNMT1 in a covalent complex, and let methylation be lost over a few divisions, reactivating some silenced genes. Azacitidine, approved for myelodysplastic syndrome in 2004, was the first epigenetic cancer drug. Both are now standard for MDS and elderly AML.
 
-The vocabulary you need:
+---
 
-- **Histone acetylation** adds an acetyl group to a lysine (written by histone acetyltransferases/HATs, removed by histone deacetylases/HDACs). It neutralizes the lysine's positive charge, loosens histone–DNA contacts, and opens chromatin. Acetylation is generally *activating*; H3K27ac marks active enhancers.
-- **Histone methylation** adds methyl groups to lysines or arginines (written by methyltransferases/KMTs, removed by demethylases/KDMs), and its meaning depends on position and degree. H3K4me3 marks active promoters; H3K27me3 marks Polycomb-repressed regions; H3K9me3 marks heterochromatin (silent, densely packed).
+## The histone code
 
-A single nucleosome can carry many marks at once, and **reader** proteins (bromodomains read acetyl-lysines; chromodomains read methyl-lysines) recruit downstream machinery accordingly. Histones are therefore not merely packaging — they are a layered, combinatorial language of regulation, and cancer frequently rewrites it.
+The second major layer of epigenetic control is on the histones. The structural unit of chromatin is the **nucleosome** — roughly 147 base pairs of DNA wrapped around an octamer of histone proteins (two each of H2A, H2B, H3, and H4). The histones are not passive packaging. Their N-terminal tails project out from the nucleosome surface and carry a dense set of chemical marks that are written by one class of enzymes, erased by another, and read by a third.
 
-### Histone modifications in cancer
+The vocabulary that recurs throughout cancer biology:
 
-The enzymes that write, erase, and read histone marks are mutated at high frequency in cancer. Bladder cancer is the extreme: roughly 80 percent carry mutations in chromatin-modifying genes [verify], including *ARID1A* (a SWI/SNF subunit), *KDM6A*, and *KMT2D*. Most are loss-of-function — the cell loses the ability to maintain a normal mark — and the consequence is a transcriptome shifted toward proliferation or de-differentiation.
+**Histone acetylation** adds an acetyl group to a lysine residue. Written by histone acetyltransferases (HATs), removed by histone deacetylases (HDACs). Acetylation neutralizes the lysine's positive charge, loosens histone–DNA contacts, and opens chromatin for transcription. Acetylation is generally activating. H3K27ac marks active enhancers.
 
-Three patterns recur. **Gain-of-function in repressive complexes**: activating mutations in *EZH2* (the catalytic subunit of Polycomb Repressive Complex 2, which writes H3K27me3) deepen the silencing of target tumor suppressors in some lymphomas — and tazemetostat, an EZH2 inhibitor, was approved in 2020 for EZH2-mutant follicular lymphoma. **Loss-of-function in active marks**: *KMT2A* (MLL1), which writes H3K4me3, is rearranged in infant leukemias. **Chromatin-remodeler disruption**: the SWI/SNF complex, which uses ATP to reposition nucleosomes, is mutated in roughly 20 percent of all cancers.
+**Histone methylation** adds methyl groups to lysines or arginines. Written by methyltransferases (KMTs), removed by demethylases (KDMs). Its meaning depends entirely on position and the degree of methylation. H3K4me3 marks active gene promoters. H3K27me3 marks Polycomb-repressed, silenced regions. H3K9me3 marks densely packed heterochromatin. The same chemical modification — methylation — means opposite things depending on which residue carries it.
 
-Histone deacetylase (HDAC) inhibitors — vorinostat, romidepsin — were the second epigenetic drug class approved, hyperacetylating histones to reactivate silenced genes. Their clinical activity has been concentrated in blood cancers; solid tumors resist, partly because pan-HDAC inhibitors hit many targets and cause toxicity out of proportion to benefit.
+**Reader** proteins recognize specific marks and recruit downstream machinery. Bromodomains read acetyl-lysines; chromodomains read methyl-lysines. A single nucleosome can carry many marks at once, and their combination is interpreted by multiple readers simultaneously. This is the combinatorial language — the histone code — and cancer frequently rewrites it.
 
-### Metabolic–epigenetic coupling
+---
 
-A consequential subtlety: chromatin-modifying enzymes use small-molecule **metabolites** as cofactors, so the cell's metabolic state shapes its epigenetic state (Experimental & Molecular Medicine, 2023). S-adenosylmethionine is the methyl donor for all methyltransferases; α-ketoglutarate (αKG) is the cosubstrate for the TET DNA demethylases and Jumonji histone demethylases; acetyl-CoA supplies acetyl groups; NAD+ is required by sirtuin deacetylases.
+## When the code is corrupted
 
-The cleanest case is **IDH1/IDH2** mutation. Normally isocitrate dehydrogenase makes αKG; the cancer-associated mutation creates a neomorphic enzyme that instead makes **2-hydroxyglutarate (2HG)**, a structural mimic of αKG that *inhibits* the αKG-dependent demethylases. DNA and histone methylation accumulate aberrantly, tumor suppressors silence, and differentiation locks up. IDH mutations appear in ~70 percent of low-grade gliomas and ~10 percent of AML, and — remarkably — they are druggable: ivosidenib (IDH1) and enasidenib (IDH2) reduce 2HG, restore demethylase function, and allow differentiation to resume.
+The enzymes that write, erase, and read histone marks are mutated at high frequency in cancer. Bladder cancer is the extreme case: roughly 80% carry mutations in chromatin-modifying genes. Most are loss-of-function — the cell loses the ability to maintain the correct marks — and the consequence is a transcriptome shifted toward proliferation or de-differentiation.
 
-## Worked Example
+Three patterns recur across cancer types.
 
-**Situation.** A 60-year-old man is diagnosed with glioblastoma. Before deciding how aggressively to use temozolomide, his oncologist orders an *MGMT* promoter methylation test on the tumor. Why should a methyl mark predict whether a chemotherapy works?
+**Gain-of-function in repressive complexes.** The Polycomb Repressive Complex 2 writes H3K27me3, silencing developmental genes that should remain accessible. Activating mutations in *EZH2* — the PRC2 catalytic subunit — deepen and broaden this silencing in some lymphomas. This is directly druggable: tazemetostat, an EZH2 inhibitor, was approved in 2020 for EZH2-mutant follicular lymphoma. The drug works by blocking the enzyme that writes the repressive mark, allowing silenced tumor suppressors and differentiation genes to reactivate.
 
-**Process.** Temozolomide is an alkylating agent: it attaches a methyl group to the O6 position of guanine in tumor DNA. During replication, O6-methylguanine mispairs with thymine, introducing mutations that, if numerous, kill the cell.
+**Loss-of-function in activating complexes.** *KMT2A* (MLL1), which writes H3K4me3 at active gene promoters, is rearranged — fused to various partner genes — in infant leukemias, producing a chimeric protein that activates proliferative targets in a manner no longer subject to normal controls. The mark that supports normal transcription is turned into a constitutive activator.
 
-The *MGMT* gene encodes a repair protein whose only job is to strip that methyl group off guanine — transferring it to its own cysteine residue and then being destroyed (one repair per molecule). So *MGMT* status sets the outcome: in a tumor expressing *MGMT*, the alkylation damage is repaired and the cell survives the drug; in a tumor with a *hypermethylated, silenced MGMT* promoter, the repair protein is absent, damage accumulates, and the cell dies.
+**Chromatin-remodeler disruption.** The SWI/SNF complex uses ATP hydrolysis to reposition nucleosomes, making specific genomic regions accessible or inaccessible. Subunits of SWI/SNF — particularly *ARID1A*, *SMARCA4*, *SMARCB1* — are mutated in roughly 20% of all human cancers, making SWI/SNF the most frequently mutated chromatin complex in cancer. Loss-of-function in SWI/SNF impairs the opening of tumor-suppressor loci and differentiation-gene loci, locking cells in a more stem-like, proliferative state.
 
-*A dead end.* One might assume that *more* DNA repair always protects the patient — repair is good. Here the logic inverts: the tumor's repair capacity protects the *tumor*, not the patient. A patient whose tumor repairs efficiently benefits *less* from the drug. The naive "repair is protective" intuition predicts the wrong direction.
+**HDAC inhibitors** — vorinostat and romidepsin were early approvals — hyperacetylate histones genome-wide to reactivate silenced genes. Their clinical activity has been concentrated in blood cancers. In solid tumors they have largely disappointed, partly because pan-HDAC inhibition hits many targets indiscriminately and produces toxicity out of proportion to benefit. Isoform-selective HDAC inhibitors are in development, hoping to capture the benefit while narrowing the mechanism.
 
-**Resolution.** The test returns *MGMT* promoter hypermethylation. This predicts a better response to temozolomide, and indeed methylated-*MGMT* patients survive significantly longer on temozolomide-based therapy than unmethylated ones (Stupp protocol). The methyl mark on one promoter — read by methylation-specific PCR or bisulfite sequencing — guides the treatment plan.
+---
 
-**The lesson.** A single epigenetic mark, by silencing one repair gene, can determine whether a specific drug works — epigenetic state, not just sequence, is clinically predictive.
+## The metabolic connection
 
-**The limit.** This biomarker is specific to *MGMT* and alkylating agents; it does not generalize to other drugs, and methylation status is a probabilistic predictor, not a guarantee of response.
+There is a subtlety that the enzyme-centric picture of epigenetics obscures: the enzymes that write and erase chromatin marks use small-molecule metabolites as cofactors, which means the cell's metabolic state directly shapes its epigenetic state.
+
+S-adenosylmethionine is the methyl donor for all methyltransferases — DNA and histone. α-ketoglutarate (αKG) is the cosubstrate for the TET DNA demethylases and the Jumonji histone demethylases. Acetyl-CoA supplies the acetyl groups for histone acetyltransferases. NAD+ is required by sirtuin deacetylases. When metabolic enzyme activity changes, cofactor availability changes, and the epigenome shifts.
+
+The cleanest example is IDH1/IDH2 mutation. Isocitrate dehydrogenase normally converts isocitrate to αKG in the TCA cycle. The cancer-associated IDH mutation creates a neomorphic enzyme that converts αKG to **2-hydroxyglutarate (2HG)** instead. 2HG is a structural mimic of αKG — close enough to compete for the active sites of αKG-dependent demethylases, but unable to complete the reaction. TET enzymes (which demethylate DNA) and Jumonji-domain histone demethylases are both inhibited. Methylation accumulates aberrantly across the genome. Tumor suppressors silence. Differentiation programs lock.
+
+IDH mutations appear in roughly 70% of low-grade gliomas and about 10% of AML. And they are druggable in a way that makes the metabolic–epigenetic coupling therapeutically concrete: ivosidenib (targeting IDH1) and enasidenib (targeting IDH2) reduce 2HG levels by blocking the neomorphic enzyme. As 2HG falls, αKG-dependent demethylases regain function, methylation patterns normalize, and differentiation resumes. Leukemic blasts mature into functional cells. The epigenetic lock, caused by a metabolic enzyme carrying a single amino acid change, is released by a small molecule that reverses the metabolic error.
+
+This is the sharpest demonstration that reversibility is real — that a methylation state accumulated over years can be cleared by removing its cause — and it grounds the optimism about epigenetic therapy in something more than aspiration.
+
+---
+
+## Back to MGMT, and what it teaches
+
+Return to the opening case. Temozolomide attaches a methyl group to the O6 position of guanine. During replication, O6-methylguanine mispairs with thymine, introducing mismatches that, if abundant, trigger cell death. The *MGMT* protein's only job is to transfer that methyl group to its own cysteine residue and deactivate itself — one repair event per enzyme molecule, a suicide mechanism. So MGMT expression determines whether the drug's damage persists long enough to kill.
+
+In a tumor with a hypermethylated, silenced *MGMT* promoter, no MGMT protein is made, the O6-methylguanine lesions accumulate, and the cells die. In a tumor with an expressed *MGMT* gene, the damage is repaired and the cells survive. The test is a methylation-specific PCR or bisulfite sequencing of the promoter region — technically straightforward, clinically decisive.
+
+The intuition to resist here: "more DNA repair should be better for the patient." That intuition applies when the patient's normal tissue is being damaged. Here the drug is trying to damage the *tumor*, and MGMT protects the tumor. A patient whose tumor repairs efficiently is a patient whose drug is being neutralized. The methyl mark that silences the repair gene is, from the patient's perspective, a stroke of luck — and a predictive biomarker that guides how aggressively to use the drug.
+
+MGMT methylation status is now standard in glioblastoma management. It is the clearest example in oncology of an epigenetic mark serving as a predictive biomarker: not prognostic (not predicting how long the patient will live regardless of treatment), but predictive (predicting differential benefit from a specific treatment based on a molecular feature of the tumor).
 
 <!-- → [DIAGRAM: MGMT methylation decision tree — methylated promoter → silenced repair → temozolomide damage accumulates → cell death (drug works); unmethylated → MGMT expressed → damage repaired → cell survives (drug wasted)] -->
 
-## Common Misconceptions
+---
 
-**"Epigenetic means weak, or not really biological."** The opposite. The *MGMT* mark in the opening case changes survival; IDH mutations silence whole differentiation programs through 2HG. Epigenetic marks are enzymatically written and faithfully inherited through division — they are as biologically consequential as mutations, just reversible in principle.
+## The limits of reversibility
 
-**"Histones are just packaging."** Histone tails carry a combinatorial code of marks that are written, erased, and read by specific enzymes and that determine whether genes are accessible. When SWI/SNF or EZH2 is mutated, the transcriptome shifts toward proliferation — a change in packaging that drives the disease, not a passive consequence of it.
+Epigenetic marks are reversible in principle. The DNMT inhibitors and HDACi demonstrate reversibility in practice. So why is the epigenetic drug story not simpler than it has turned out to be?
 
-**"Reversible means easy to fix."** Reversibility makes epigenetic marks attractive drug targets, but because the same enzymes act genome-wide, the effects are broad and context-dependent. DNMT and HDAC inhibitors reactivate many genes at once, work well in blood cancers, and disappoint in solid tumors with entrenched chromatin states — proof of principle and cautionary example at once.
+The answer is that "reversible" does not mean "easily corrected." The same enzymes that establish cancer-associated marks also regulate normal gene expression genome-wide. DNMT inhibitors reactivate not just silenced tumor suppressors but also retrotransposons, inflammatory response genes, and imprinted loci. HDAC inhibitors deacetylate not one target but thousands. The breadth of effect is both why these drugs work — reactivating multiple silenced programs simultaneously — and why they produce broad toxicity and inconsistent benefit across solid tumors.
 
-## Exercises
+The success in blood cancers and the failure in most solid tumors likely reflects a difference in chromatin state entrenchment. Hematopoietic cancers are relatively early in their epigenetic drift — silenced genes can be reactivated by removing the marks. Solid tumors that have been accumulating epigenetic changes across years and many cell generations may have reached states where the mark is necessary but not sufficient: removing the methyl groups does not clear the dense heterochromatin machinery that has been recruited on top of them. The book's covers are no longer just taped; the pages have been glued.
 
-1. **(Understand)** Explain in two or three sentences why a cancer can show *both* global hypomethylation and focal hypermethylation at the same time, and state how each contributes to the cancer phenotype.
+The IDH inhibitor story is the exception because it works by removing the metabolic driver of hypermethylation, not just the methylation itself. When 2HG falls, the demethylases regain their normal activity and the system moves toward its default state. It is closer to removing the cause than to correcting the consequence.
 
-2. **(Apply)** A sporadic ovarian cancer has wild-type *BRCA1* sequence but no BRCA1 protein. Propose an epigenetic explanation, and predict whether this tumor might respond to a PARP inhibitor (recall Chapter 6). State what evidence you would need to confirm your prediction.
+---
 
-3. **(Apply / Produce)** Construct a writer/eraser/reader table for these marks: H3K4me3, H3K9me3, H3K27me3, H3K27ac. For each, name the writer enzyme class, the eraser class, an example reader domain, and whether the mark generally indicates active or repressed transcription.
+## What would change this picture
 
-4. **(Analyze)** Trace the IDH→2HG→demethylase chain and explain why an IDH inhibitor *reverses* an epigenetic phenotype even though IDH is a metabolic enzyme, not a chromatin enzyme. Classify each link in the chain as established mechanism or therapeutic implication.
+The chapter's central claim is that epigenetic dysregulation is a genuine, independent driver of cancer — capable of silencing tumor suppressors and reshaping phenotype without sequence change — and that it is pharmacologically reversible under the right conditions. The findings that would force revision: convincing evidence that canonical epigenetic abnormalities (CpG-island hypermethylation, IDH-driven hypermethylation) are consistently *downstream consequences* of mutations rather than independent contributors; or robust evidence that demethylating and IDH-inhibiting drugs produce no durable reactivation of silenced genes and no phenotypic reversal across well-controlled trials. The IDH inhibitor response — tumors regressing and differentiation resuming as 2HG falls — is the strongest causal evidence that epigenetic state drives the disease independently. A reproducible failure to replicate that result would undercut the framework.
 
-## What Would Change My Mind
+---
 
-The chapter's central claim is that epigenetic dysregulation is a genuine driver of cancer — capable of silencing tumor suppressors and altering phenotype without any sequence change — and that it is, at least sometimes, pharmacologically reversible. Findings that would force revision: convincing evidence that the canonical epigenetic abnormalities (CpG-island hypermethylation of tumor suppressors, IDH-driven hypermethylation) are consistently *downstream consequences* of mutations rather than independent drivers, or that demethylating and IDH-inhibiting drugs produce no durable reactivation of silenced genes and no phenotypic reversal in well-controlled trials. The IDH-inhibitor response — tumors regressing and differentiation resuming as 2HG falls — is the strongest causal evidence; a robust failure to replicate it would undercut the "reversible driver" framing.
+## Still open
 
-## Still Puzzling
+Why DNMT inhibitors and HDAC inhibitors work in blood cancers but largely fail in solid tumors is not settled. Candidate explanations include chromatin-state entrenchment, microenvironmental differences, and drug delivery, but no clean discriminating experiment has been done.
 
-- Why do demethylating and HDAC-inhibiting drugs work in blood cancers but largely fail in solid tumors? Is the difference the chromatin state, the microenvironment, drug delivery, or all three?
-- Global hypomethylation and focal hypermethylation coexist in the same tumor through different machinery — but is one of them the initiating event, or do they arise independently? Does the order matter for therapy?
-- If a tumor suppressor can be silenced by methylation *or* by mutation with the same functional result, what determines which route a given cancer takes in a given tissue? This question carries forward into Chapter 8's account of reprogramming and plasticity.
+Whether global hypomethylation and focal hypermethylation arise independently or whether one precipitates the other — and whether the order matters therapeutically — is an open question. They are products of different machinery, but they coexist in the same cell, and their interaction is not well mapped.
+
+And if a tumor suppressor can be silenced by methylation or by mutation with the same functional result, what determines which route a given cancer takes in a given tissue? The answer probably involves the epigenetic landscape of the cell of origin and the available mutational and metabolic pressures, but the specific rules are not known.
+
+---
+
+## LLM Exercises
+
+1. **(Paradox)** Explain why a cancer cell can simultaneously show global hypomethylation of the bulk genome and focal hypermethylation of CpG islands at tumor suppressor promoters. What machinery is responsible for each, and how does each contribute to the cancer phenotype? Construct the argument that these two patterns are not contradictory but complementary cancer mechanisms.
+
+2. **(Epigenetic mimicry)** A sporadic ovarian cancer has wild-type *BRCA1* sequence by exome sequencing but no detectable BRCA1 protein. Propose an epigenetic explanation. Predict whether this tumor would respond to a PARP inhibitor, identify the mechanism of any response, and describe what evidence you would need to confirm the epigenetic explanation versus an alternative (e.g., post-translational regulation).
+
+3. **(Histone code table)** For each of the following marks, identify the writer enzyme class, the eraser enzyme class, an example reader domain, and whether the mark generally indicates active or repressed transcription: H3K4me3, H3K9me3, H3K27me3, H3K27ac. Then predict the transcriptional consequence of simultaneously losing the H3K27me3 writer (EZH2) and gaining the H3K27ac writer (p300) at the same locus.
+
+4. **(IDH chain)** Trace the complete chain from IDH mutation to epigenetic phenotype: name the neomorphic product, the enzymes it inhibits, the chromatin marks that accumulate as a result, and the gene-expression consequence. Then explain why an IDH inhibitor reverses an epigenetic phenotype even though IDH is a metabolic enzyme. Classify each step as established mechanism, established therapeutic implication, or still under investigation.
+
+5. **(MGMT as predictive biomarker)** Distinguish a prognostic biomarker from a predictive biomarker, then classify MGMT methylation status and justify the classification. A glioblastoma patient has an unmethylated *MGMT* promoter. Their neuro-oncologist is considering forgoing temozolomide and enrolling them in a trial of an experimental drug. Using the mechanism developed in this chapter, construct the strongest argument for the trial enrollment decision and the strongest argument against it.
+
+---
 
 ## References
 
@@ -124,7 +145,3 @@ The chapter's central claim is that epigenetic dysregulation is a genuine driver
 - National Cancer Institute. *What Is Cancer?* https://www.cancer.gov/about-cancer/understanding/what-is-cancer
 - Hanahan, D. *Hallmarks of Cancer: New Dimensions.* Cancer Discovery, 2022. https://aacrjournals.org/cancerdiscovery/article/12/1/31/675608
 - NCBI Bookshelf. *Molecular Biology of the Cell.* https://www.ncbi.nlm.nih.gov/sites/books/n/mboc4/
-
-## Prompts
-
-*No figures have been generated for this chapter yet.*
