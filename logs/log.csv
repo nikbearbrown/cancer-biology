@@ -1,0 +1,17 @@
+date,book,chapter_slug,word_count,sources_count,verify_flag_count,pantry_notes_found,pantry_lib_files_used,thin_pantry,mechanism_explained,contested_claims_flagged
+2026-06-08,cancer-biology,the-building-blocks-of-life-normal-cell-biology,2779,10,0,yes,0,no,"Cell cycle as a checkpoint-gated decision system (cyclin-CDK, p53, Rb); losing one control protein lets ordinary DNA damage propagate.",1
+2026-06-08,cancer-biology,introduction-to-cancer-a-disease-of-deregulation,2474,7,0,yes,0,no,"Hallmarks as acquired capabilities; grade-vs-stage and benign-vs-malignant clinical translation.",2
+2026-06-08,cancer-biology,cancer-epidemiology-and-risk-factors,2752,9,1,yes,0,no,"Causal inference (Bradford Hill) separating causal confidence from effect size; exposure to molecular damage to prevention.",2
+2026-06-08,cancer-biology,genetics-and-genomic-instability-in-cancer,2680,7,0,yes,0,no,"Cancer as clonal evolution: driver/passenger selection, Knudson two-hit logic, DNA-repair failure as accelerant.",0
+2026-06-08,cancer-biology,oncogenes,2570,6,1,yes,0,no,"A proto-oncogene becomes an oncogene when one dominant gain-of-function lesion locks a growth-signaling protein active.",0
+2026-06-08,cancer-biology,tumor-suppressor-genes,2592,5,2,yes,0,no,"Tumor suppressors are brakes needing biallelic loss; loss removes restraint but creates synthetic-lethal dependencies.",0
+2026-06-08,cancer-biology,epigenetics-in-cancer-the-methylation-and-histone-code,2459,5,2,yes,0,no,"Cancer alters which genes are read via DNA methylation and the histone code without changing sequence; reversible, druggable.",0
+2026-06-08,cancer-biology,epigenetics-in-cancer-noncoding-rnas-reprogramming-and-therapy,2525,5,0,yes,0,no,"Noncoding RNAs and Polycomb/Trithorax reprogramming drive plasticity, identity change, and therapy resistance.",2
+2026-06-08,cancer-biology,cancer-etiology-chemical-and-radiation-carcinogens,2315,6,1,yes,0,no,"Carcinogens introduce DNA damage that becomes exposure-specific mutational signatures (procarcinogen to adduct to mutation).",0
+2026-06-08,cancer-biology,cancer-etiology-viral-and-bacterial-carcinogens,2266,6,0,yes,0,no,"Persistent infection causes cancer via viral oncoproteins, integration, or chronic inflammation; preventable by vaccination/eradication.",0
+2026-06-08,cancer-biology,cell-cycle-control-and-cancer-the-cycle-and-its-checkpoints,2582,5,0,yes,0,no,"Cyclin-CDK complexes drive a conditional cycle gated by the bistable Rb-E2F switch and three checkpoints.",0
+2026-06-08,cancer-biology,cell-cycle-control-and-cancer-disruption-and-therapy,2488,5,0,yes,0,no,"Cancers force the Rb-E2F gate open; downstream Rb-pathway integrity decides CDK4/6-inhibitor response and resistance.",0
+2026-06-08,cancer-biology,apoptosis-in-cancer-the-death-programs,2774,5,5,yes,0,no,"BCL-2 family balance governs MOMP, the irreversible commitment to caspase-driven death.",1
+2026-06-08,cancer-biology,apoptosis-in-cancer-evasion-and-restoration,2325,6,2,yes,0,no,"Cancers suppress their own death program; BH3 mimetics (venetoclax) displace a guardian from BAX/BAK to restore death.",0
+2026-06-08,cancer-biology,cancer-metabolism-the-warburg-effect-and-glucose,2488,7,2,yes,0,no,"Aerobic glycolysis is a carbon-allocation strategy for biomass; HIF-1a/VHL drives pseudohypoxic glycolysis.",2
+2026-06-08,cancer-biology,cancer-metabolism-lipids-amino-acids-and-the-tumor-microenvironment,2487,7,1,yes,0,no,"Rewired lipid/amino-acid metabolism creates dependencies (glutamine, MTAP-PRMT5 synthetic lethality) in a hostile microenvironment.",2
