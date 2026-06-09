@@ -1,104 +1,126 @@
-# Cancer Etiology: Viral and Bacterial Carcinogens
+# Chapter 10 — Cancer Etiology: Viral and Bacterial Carcinogens
 
-## Learning Objectives
+A 34-year-old woman has an abnormal Pap smear. HPV testing detects type 16. A colposcopy finds a high-grade intraepithelial lesion — abnormal cells confined to the surface, not yet invasive. The lesion is removed. She asks her doctor: "Did I catch cancer from someone?"
 
-By the end of this chapter, you should be able to:
+The honest answer threads a needle. She did not catch cancer. Cancer is not contagious. What she caught — years earlier, probably without symptoms — was a virus. In most people the immune system clears that virus within a year or two. In her, it persisted. And persistence is the whole story. For more than a decade, two viral proteins quietly disabled her cells' most important safety controls, and a clone of cells inched along the road toward malignancy. The screening caught it before the road ended.
 
-- **Describe** the major mechanisms by which microbes cause cancer — direct viral oncoproteins, insertional mutagenesis, chronic inflammation, and immunosuppression — and **match** each to a representative pathogen.
-- **Explain** at the molecular level how high-risk HPV E6 and E7 inactivate the p53 and Rb tumor-suppressor pathways.
-- **Trace** the multi-decade progression from a persistent infection to cancer, identifying where intervention can interrupt it.
-- **Evaluate** vaccination and eradication as mechanism-based cancer-prevention tools, distinguishing infection from contagious cancer.
-- **Apply** the multifactorial framework to explain why infection is usually necessary but not sufficient for the cancers it enables.
+The puzzle is worth sitting with: a virus is a small package of genes, not a tumor. How does that package turn a normal epithelial cell into a precancerous one? And why does this take a decade, leaving a long window in which the process can be stopped?
 
-## Opening Case
+---
 
-A 34-year-old woman has an abnormal Pap smear. Follow-up HPV testing detects human papillomavirus type 16. A colposcopy reveals a high-grade cervical intraepithelial lesion — abnormal but not yet invasive cells confined to the surface epithelium. The lesion is removed, and she is cured. She asks her doctor a reasonable question: "Did I catch cancer from someone?"
+## The fraction we can prevent
 
-The honest answer threads a needle. She did *not* catch cancer. Cancer is not contagious. What she caught — years earlier, and like most people who acquire HPV, probably without symptoms — was a virus. In most people the immune system clears that virus within a year or two and nothing happens. In her, it persisted. And persistence is the whole story. For more than a decade, viral proteins quietly disabled two of her cells' most important safety controls, and a clone of cells inched along the road toward malignancy. The screening caught it before the road ended.
+About one in eight cancers worldwide — roughly 2.2 million new cases per year — is attributable to an infection. This is both a striking and an actionable number. You cannot edit a genetic predisposition out of existence or easily scrub a chemical carcinogen from the environment, but you can vaccinate against a virus, eradicate a bacterium with a week of antibiotics, or cure a chronic viral infection with antivirals that achieve 95% clearance rates.
 
-The puzzle: a virus is a small package of genes, not a tumor. How does that package turn a normal epithelial cell into a precancerous one — and why does this take a decade, leaving a long window in which the process can be stopped?
+The International Agency for Research on Cancer classifies seven viruses and one bacterium as Group 1 carcinogens — definitively carcinogenic to humans: HPV, hepatitis B virus (HBV), hepatitis C virus (HCV), Epstein-Barr virus (EBV), Kaposi sarcoma–associated herpesvirus (KSHV), HTLV-1, Merkel cell polyomavirus, and *Helicobacter pylori*. Each causes a specific spectrum of cancers through a distinct mechanism, but they share one feature: **persistent infection**. Infections that resolve do not cause cancer. Infections that the immune system fails to clear, and that therefore persist for years, do.
 
-## Core Concepts
+---
 
-About one in eight human cancers worldwide — roughly 12 percent, some 2.2 million new cases a year — is attributable to an infection (archive chapter; NCI, Infectious Agents). This is a striking and, importantly, an *actionable* number. You cannot edit a genetic predisposition or easily scrub a chemical carcinogen from the environment, but you can vaccinate against a virus, eradicate a bacterium with antibiotics, or cure a chronic infection with antivirals.
+## Four mechanisms, not one
 
-An **oncogenic** (cancer-causing) microbe does not act like a chemical mutagen. The common thread across all of them is **persistent infection** — a long-term, low-level presence that the immune system fails to clear. Acute infections that resolve do not cause cancer; persistent ones do. The IARC classifies seven viruses plus *Helicobacter pylori* as Group 1 (carcinogenic to humans), including HPV, hepatitis B virus (HBV), hepatitis C virus (HCV), Epstein-Barr virus (EBV), Kaposi sarcoma–associated herpesvirus (KSHV), HTLV-1, and Merkel cell polyomavirus (NCI, Infectious Agents).
+The naive model of a viral carcinogen is a virus that encodes an oncogene — a cancer-driving protein. That model fits some agents perfectly and fails for others. Understanding why requires distinguishing four mechanisms, which are not mutually exclusive.
 
-### Four mechanisms of microbial carcinogenesis
+**Direct viral oncoproteins.** The most direct route: the virus encodes proteins that themselves disable tumor suppressors, drive proliferation, or block apoptosis. HPV's E6 and E7 are the canonical example and are treated in detail below. EBV encodes LMP1, a transmembrane protein that mimics constitutive signaling through the CD40 receptor — activating NF-κB and other proliferative pathways without any actual ligand. KSHV encodes a viral cyclin (which drives cell division without the normal regulatory constraints on cyclin expression) and a viral interleukin-6 homolog. These viruses bring their own oncogenic toolkit; they have evolved it over millions of years of co-evolution with their hosts.
 
-**Direct viral oncoproteins.** The most direct route: the virus encodes proteins that themselves drive proliferation or block tumor suppression. HPV's E6 and E7 are the canonical example (below). EBV encodes LMP1, which mimics constitutive growth signaling; KSHV encodes a viral cyclin and a viral interleukin-6 homolog — essentially a customized oncogenic toolkit. These proteins are the molecular smoking gun.
+**Insertional mutagenesis.** When a virus integrates its DNA into the host chromosome, the insertion site can activate a nearby oncogene by placing it under viral promoter control, or disrupt a tumor suppressor by inserting into its coding sequence. HBV integrates in most chronic infections; integration near *TERT* (telomerase reverse transcriptase) or cyclin genes is found in hepatocellular carcinoma. In HPV, integration into the host genome during disease progression often disrupts the viral *E2* gene that normally constrains E6 and E7 expression — a double bad luck in which integration both commits the viral DNA to the cell and releases the brake on the oncoproteins.
 
-**Insertional mutagenesis.** When a virus **integrates** its DNA into the host genome, the insertion site can disrupt nearby genes or place them under viral promoter control. HBV integrates in most chronic infections; HPV integration during progression often disrupts the viral *E2* gene that normally restrains E6/E7, thereby *increasing* oncoprotein expression.
+**Chronic inflammation.** A persistent infection drives a permanent immune response. Inflammatory cells generate reactive oxygen and nitrogen species that damage DNA continuously. The damaged tissue undergoes repeated cycles of injury and regeneration — elevated cell division means elevated replication, which means elevated opportunity for replication errors. Over decades, this background rate of mutagenesis is enough to accumulate the drivers needed for cancer. This is the dominant mechanism for HBV and HCV in liver cancer and for *H. pylori* in gastric cancer. No single viral oncogene is required; the immune response does the mutagenic work.
 
-**Chronic inflammation.** A persistent infection drives a chronic immune response. Inflammatory cells generate reactive oxygen and nitrogen species that damage DNA, while repeated cycles of tissue injury and regeneration multiply cell divisions and therefore replication errors. This is the dominant mechanism for HBV/HCV liver cancer and *H. pylori* stomach cancer (NCI, *H. pylori* and Cancer).
-
-**Immunosuppression.** Some agents cause cancer indirectly by crippling immune surveillance, letting other oncogenic infections flourish. HIV is the canonical example, enabling KSHV-driven Kaposi sarcoma.
+**Immunosuppression.** Some agents cause cancer not by acting on the cancer cell directly but by dismantling the immune surveillance that would otherwise eliminate early malignant cells. HIV is the central example: it depletes CD4+ T cells, allowing KSHV-driven Kaposi sarcoma and EBV-driven lymphomas to develop at frequencies essentially never seen in immunocompetent people. The carcinogen here is the immunosuppressive virus, not the viruses it unleashes.
 
 <!-- → [DIAGRAM: four mechanisms of microbial carcinogenesis — direct oncoproteins / insertional mutagenesis / chronic inflammation / immunosuppression, each with a representative pathogen] -->
 
-The **latency** between infection and cancer is long — typically 10–20 years for HPV and cervical cancer, 20–40 for HBV/HCV and liver cancer, 30–50 for *H. pylori* and gastric cancer (archive chapter). The long latency is both the price (cancers appear a generation after exposure) and the opportunity (a wide window for intervention).
+The latency between infection and cancer is long — typically 10 to 20 years for HPV and cervical cancer, 20 to 40 for HBV/HCV and liver cancer, 30 to 50 for *H. pylori* and gastric cancer. The long latency is both the price and the opportunity. Cancers appear a generation after exposure, which obscures the causal chain; but the window between infection and cancer is wide enough for multiple effective interventions.
 
-### How high-risk HPV disables two checkpoints at once
+---
 
-Human papillomaviruses are small DNA viruses infecting epithelial cells. Of roughly 200 types, the **high-risk** types (HPV-16, -18, and others) cause essentially all cervical cancers and a large share of anal and oropharyngeal cancers. Two viral proteins do the transforming work.
+## How HPV disables two checkpoints simultaneously
 
-**E6** recruits a cellular ubiquitin ligase, E6AP, and redirects it to tag **p53** for destruction by the proteasome. With p53 gone, damaged DNA no longer triggers cell-cycle arrest or apoptosis. **E7** binds **Rb** (retinoblastoma protein) and disrupts the Rb–E2F interaction, releasing the E2F transcription factor so that S-phase genes switch on regardless of growth signals (NCI, HPV and Cancer).
+Human papillomaviruses are small DNA viruses that infect epithelial cells. Of roughly 200 types, the high-risk types — particularly HPV-16 and HPV-18 — cause essentially all cervical cancers, most anal cancers, and a growing fraction of oropharyngeal cancers. The transforming work is done by two viral proteins.
 
-Together, E6 and E7 do to a cell what mutations in *TP53* and *RB1* would do — but acutely, upon infection, rather than gradually. The cell loses its two most important checkpoints in one stroke. Years of persistent E6/E7 expression let further mutations accumulate, and the lesion progresses through cervical intraepithelial neoplasia grades to invasive cancer.
+**E6** recruits a cellular ubiquitin ligase — E6AP — and redirects it to target **p53** for proteasomal destruction. With p53 gone, damaged DNA no longer triggers cell-cycle arrest or apoptosis. The genome's guardian is eliminated, quietly, by a protein that contains no mutated DNA and leaves no sequence change behind.
+
+**E7** binds the retinoblastoma protein **Rb** and disrupts the Rb–E2F complex. Normally, Rb sequesters the transcription factor E2F, preventing it from activating S-phase genes until cyclin D–CDK4/6 phosphorylates Rb and releases E2F as a controlled signal that the cell is ready to divide. E7 forces this release regardless of growth signals. The cell enters S phase whether it should or not.
+
+Together, E6 and E7 do to a cell what mutations in *TP53* and *RB1* would do — but acutely, as a consequence of infection rather than through accumulated mutations. The cell loses both its checkpoint guardian and its gate-to-S-phase in a single infectious event. What takes years of somatic mutation in other cancers happens in one step here. And years of persistent E6/E7 expression give the damaged, checkpoint-free cell time to accumulate the further mutations that push it toward invasion.
+
+The progression is gradual precisely because E6 and E7 create permissive conditions rather than executing transformation directly. A cell expressing these proteins does not immediately become cancerous; it becomes a cell in which damage is not repaired and normal growth controls are not enforced, and in which further mutations accumulate at an elevated rate. The cervical intraepithelial neoplasia grading system — CIN1, CIN2, CIN3, carcinoma in situ, invasive carcinoma — is a histological record of that accumulation. The Pap smear and colposcopy detect it during the long CIN phase, before invasion.
 
 <!-- → [DIAGRAM: HPV E6 → p53 degradation (loss of damage response); HPV E7 → Rb–E2F disruption (uncontrolled S-phase entry); together = two checkpoints down] -->
 
-### Prevention as mechanism-based intervention
+---
 
-Because these cancers run through known molecular steps, prevention can target them directly. The **HPV vaccine** stimulates antibodies against the viral capsid protein L1, blocking infection before it establishes; Gardasil 9 prevents roughly 90 percent of cervical cancers (NCI, HPV and Cancer). The **hepatitis B vaccine** has dramatically reduced liver cancer in vaccinated cohorts. **HCV** became curable in 2014 with direct-acting antivirals achieving cure rates above 95 percent. **H. pylori eradication** with antibiotics reduces gastric cancer incidence by roughly a third (archive chapter). Note the key conceptual move: infectious-disease prevention *is* cancer prevention here. They are not separate enterprises.
+## *H. pylori* and why the "find the oncogene" model fails
 
-### The multifactorial framework
+Barry Marshall and Robin Warren proposed in the early 1980s that a spiral bacterium found in stomach biopsies — *Helicobacter pylori* — caused gastritis and ulcers and might be linked to gastric cancer. The medical establishment's resistance was fierce: everyone knew peptic ulcers were caused by stress and excess acid. Marshall famously drank a culture of the bacteria to demonstrate its pathogenicity, developed gastritis within days, and treated himself with antibiotics. The 2005 Nobel Prize was the eventual vindication.
 
-No real cancer has a single cause. Infection is typically **necessary but not sufficient**. Endemic Burkitt lymphoma requires EBV *and* malaria-driven B-cell proliferation; nasopharyngeal carcinoma involves EBV *plus* dietary cofactors and host genetics. The carcinogens of this and the previous chapter act within a larger picture — converging exposures, genetic susceptibility, chronic inflammation, and clonal selection over decades (Hanahan, *Hallmarks of Cancer: New Dimensions*, 2022).
+The mechanism question for cancer is instructive. The first instinct is to search for a bacterial oncogene — something like E6 or E7. *H. pylori* does inject a protein, **CagA**, into gastric epithelial cells via a type IV secretion system, where it disrupts intracellular signaling. CagA-positive strains carry higher cancer risk than CagA-negative ones. But CagA is not a classical transforming oncoprotein. It does not degrade p53 or constitutively release E2F. And most people carry *H. pylori* for their entire lives without developing gastric cancer. The "find the oncogene" approach does not close.
 
-## Worked Example
+The correct mechanism is chronic inflammation. *H. pylori* colonizes the gastric mucosa and persists indefinitely unless eradicated. The immune response to it is continuous: infiltrating neutrophils and macrophages generate reactive oxygen and nitrogen species, damaging the DNA of gastric epithelial cells. The repeated injury drives compensatory regeneration — elevated cell division — which multiplies opportunities for replication errors. Over 30 to 50 years, the stomach progresses through a stereotyped sequence: chronic active gastritis → atrophic gastritis → intestinal metaplasia → dysplasia → adenocarcinoma. The Correa cascade, as it is called, is the slow geological sedimentation of a mutagenic environment acting on a proliferating epithelium.
 
-**Situation.** In the early 1980s, Barry Marshall and Robin Warren in Perth isolated a spiral bacterium, *Helicobacter pylori*, from stomach biopsies and proposed it caused gastritis and ulcers — and might be linked to gastric cancer. A clinician today wants to understand how a stomach bacterium causes cancer and whether treating it can prevent the disease.
+Because the driver is the *persistent infection*, removing it interrupts the chain. Eradication therapy — a proton-pump inhibitor plus two antibiotics for one to two weeks — clears the bacterium in 80 to 95% of patients. Long-term follow-up data show roughly a 35% reduction in gastric cancer incidence in eradicated versus non-eradicated patients, with the benefit largest in patients treated before precancerous changes have already established. Once atrophic gastritis or intestinal metaplasia is present, eradication still helps but the accumulated mutagenic damage is harder to undo.
 
-**Process.** The first instinct is to look for a viral-style oncogene — a bacterial protein that directly transforms cells. *H. pylori* does inject a protein, **CagA**, into gastric epithelial cells, altering their signaling, and CagA-positive strains carry higher cancer risk (NCI, *H. pylori* and Cancer).
+The same logic that wrongly demanded an oncogene from *H. pylori* would have prevented the discovery of the intervention. Getting the mechanism right — inflammation, not direct transformation — led directly to antibiotics as cancer prevention.
 
-*Dead end.* But CagA is not a classical oncoprotein that degrades p53 or releases E2F. If you search only for a direct transforming protein, the mechanism doesn't close — most infected people carry *H. pylori* for life and never develop cancer, and the bacterium lives in the stomach lumen, not inside the transforming cell's nucleus. The "find the bacterial E6" model fails.
+---
 
-**Resolution.** The mechanism is **chronic inflammation**, not direct transformation. Persistent infection causes lifelong gastritis. The inflammatory response generates reactive oxygen and nitrogen species that damage epithelial DNA; repeated injury and regeneration multiply cell divisions and mutations. Over 30–50 years the gastric epithelium progresses through atrophic gastritis, intestinal metaplasia, dysplasia, and finally adenocarcinoma (archive chapter). Because the driver is the *persistent* infection, removing it interrupts the chain: eradication therapy (a proton-pump inhibitor plus two antibiotics) clears the bacterium in 80–95 percent of patients, and long-term follow-up shows roughly a 35 percent reduction in gastric cancer incidence, with stronger effects before precancerous changes set in (archive chapter). Marshall's and Warren's work earned the 2005 Nobel Prize.
+## Prevention as mechanism-based intervention
 
-**The lesson.** Not every microbial carcinogen works through a direct oncogene. Looking only for viral-style oncoproteins blinds you to the inflammation-driven majority — and to the intervention (antibiotics) that follows from getting the mechanism right.
+The mechanistic clarity of infectious carcinogenesis makes it uniquely amenable to prevention. Each step in the causal chain from infection to cancer is a potential intervention point.
 
-**The limit.** Eradication reduces risk most in people without established precancerous changes; in patients who already have atrophy or metaplasia, clearing the bacterium helps less. The 30–50 year latency also means population-level benefit unfolds slowly, which complicates judging eradication programs on short timescales.
+The **HPV vaccine** immunizes against the viral capsid protein L1, generating antibodies that block infection before it establishes. Gardasil 9, protecting against nine HPV types, prevents roughly 90% of cervical cancers. In populations with high vaccination coverage — several high-income countries — cervical cancer incidence is already falling sharply among vaccinated cohorts. This is not a 20-year projections; the signal is visible now.
 
-## Common Misconceptions
+The **hepatitis B vaccine** prevents HBV infection and has substantially reduced liver cancer incidence in countries where childhood vaccination was introduced in the 1980s and 1990s. A generation of children vaccinated against HBV is becoming a generation of adults with lower hepatocellular carcinoma rates.
 
-**"Infection-associated cancer is contagious — you can catch the cancer."** What is transmissible is the *microbe*, not the tumor. HPV, HBV, and *H. pylori* spread between people; the cancer that may eventually arise, decades later in a minority of persistently infected hosts, is a clonal outgrowth of the patient's own cells and cannot be passed to anyone (NCI, Infectious Agents). The woman in the opening case caught a virus, not a cancer — and most people who catch the same virus clear it and never develop disease.
+**HCV** was transformed from a chronic, cancer-predisposing infection into a curable disease in 2014 with direct-acting antivirals. Cure rates above 95% are now routine. Curing HCV eliminates the ongoing inflammatory driver; the liver cancer risk falls substantially, though not to baseline in patients who already have cirrhosis.
 
-**"To prove a microbe causes a cancer, you need to find its oncogene."** This works for HPV (E6/E7) and EBV (LMP1) but fails for the inflammation-driven cancers. *H. pylori*, HBV, and HCV cause much of their cancer burden through sustained inflammation, tissue turnover, and accumulated mutations — no single direct transforming protein required (NCI, *H. pylori* and Cancer). Searching only for an oncogene would have missed the gastric-cancer mechanism entirely and, with it, the antibiotic cure.
+*H. pylori* **eradication** is gastric cancer prevention — a fact that was controversial when Marshall and Warren first proposed the connection and is now the basis of population-level eradication programs in high-incidence countries.
 
-**"Cancer prevention and infectious-disease prevention are separate fields."** For the agents in this chapter they are the same intervention. The HPV vaccine is an anti-cancer vaccine. HBV vaccination is liver-cancer prevention. Curing HCV with antivirals lowers liver-cancer risk. Treating *H. pylori* is gastric-cancer prevention (archive chapter; NCI, HPV and Cancer). Separating the two leads students to overlook the most cost-effective cancer prevention available — exactly the screening-and-vaccination pathway that protected the patient in the opening case.
+The conceptual point deserves stating directly: infectious-disease prevention and cancer prevention are the same enterprise here. The HPV vaccine is an anti-cancer vaccine. The HBV vaccine is anti-cancer. HCV antivirals are anti-cancer treatment. Framing them as separate fields obscures the opportunity — and helps explain why cervical cancer mortality in sub-Saharan Africa is roughly ten times that in high-income countries, where vaccination, screening, and treatment are accessible.
 
-## Exercises
+---
 
-1. **(Understand)** List the four mechanisms by which microbes cause cancer and give one representative pathogen for each. For one of them, write a single sentence in the form "When X persists, Y changes, which lets the cell do Z."
+## Necessary but not sufficient
 
-2. **(Apply)** A 60-year-old with chronic hepatitis B who also lives in a region with aflatoxin-contaminated grain develops hepatocellular carcinoma. Explain, using the initiation–promotion framework from the previous chapter, why the two exposures together produce cancer at higher rates than either alone, and name one intervention for each factor.
+No real cancer has a single cause, and infection is no exception to the multifactorial rule. Most people who carry *H. pylori* for life never develop gastric cancer. Over 90% of adults carry EBV; most never develop EBV-associated lymphoma or nasopharyngeal carcinoma. The majority of people who acquire HPV clear it without consequences.
 
-3. **(Produce)** Build the *H. pylori*-to-gastric-cancer progression as a labeled timeline with at least five stages from infection to carcinoma. At each transition, mark whether intervention is still possible and what that intervention would be. Indicate the approximate total latency.
+Infection is typically **necessary but not sufficient**. Endemic Burkitt lymphoma requires EBV *plus* holoendemic malaria, which drives the sustained B-cell proliferation that amplifies the risk of EBV-associated transformation. Nasopharyngeal carcinoma involves EBV plus dietary and genetic cofactors specific to the populations where it is concentrated. Hepatocellular carcinoma in some regions involves HBV or HCV plus aflatoxin from contaminated grain, where the two exposures together exceed either alone — a multiplicative interaction, not additive.
 
-4. **(Analyze)** Australia has high HPV vaccination coverage; many low-income countries do not. Given that cervical cancer mortality in sub-Saharan Africa is roughly ten times that in high-income countries, identify which links in the prevention chain (vaccination, screening, treatment access) are most likely responsible for the gap, and argue which intervention would yield the largest reduction per dollar.
+The multifactorial reality does not weaken the causal claim for infection. It contextualizes it. Removing the infection removes a necessary contributor, even if not the only one, and the intervention data — vaccination, eradication, antivirals — demonstrate the reduction in cancer incidence that follows. The mechanism and the intervention both confirm the causal role.
 
-## What Would Change My Mind
+---
 
-The central claim is that specific persistent infections cause specific cancers through known mechanisms, and that interrupting the infection prevents the cancer. The strongest evidence is interventional: HPV vaccination is already driving cervical-cancer incidence toward elimination in high-coverage populations, HBV vaccination has cut childhood liver cancer in vaccinated cohorts, and *H. pylori* eradication lowers gastric-cancer incidence in randomized follow-up (archive chapter). This claim would be undermined if long-term, well-controlled vaccination or eradication programs failed to reduce the corresponding cancers despite high uptake and adequate follow-up — for instance, if mature HPV-vaccinated cohorts showed no decline in cervical cancer relative to comparable unvaccinated cohorts, or if *H. pylori* eradication in large trials produced no gastric-cancer benefit even in patients treated before precancerous change. A demonstration that the association was confounded — that some third factor drove both the infection and the cancer — would force revising the causal claim.
+## What would change this picture
 
-## Still Puzzling
+The central claim is that specific persistent infections cause specific cancers through known mechanisms, and that interrupting the infection prevents the cancer. This is now intervention-level evidence, not just association. HPV vaccination is driving cervical cancer incidence toward elimination in high-coverage populations. HBV vaccination has produced measurable reductions in childhood liver cancer rates. *H. pylori* eradication lowers gastric cancer incidence in randomized follow-up.
 
-- **Why a minority?** Half the world carries *H. pylori*; over 90 percent of adults carry EBV; most people clear HPV. Yet only a small fraction develop cancer. The host, strain, and cofactor determinants of who progresses remain incompletely understood.
+The finding that would force revision: long-term, well-controlled vaccination or eradication programs, with high uptake and adequate follow-up, showing no reduction in the corresponding cancer relative to comparable control populations. If mature HPV-vaccinated cohorts showed cervical cancer rates indistinguishable from unvaccinated cohorts, or if *H. pylori* eradication trials showed no gastric-cancer benefit even in patients treated before precancerous change, the causal claim would require fundamental re-examination. A demonstration that the association was confounded — that some third factor drove both infection and cancer — would similarly force revision. Neither has happened.
 
-- **No vaccine yet.** There is no licensed EBV vaccine as of 2026, despite EBV's role in several cancers and its near-universal prevalence. What an effective EBV vaccine would prevent globally is an open and consequential question.
+---
 
-- **The microbiome's role.** Beyond named pathogens, the broader microbial community may modulate cancer risk and even therapy response — an emerging area flagged as active synthesis rather than settled (Hanahan, 2022). How much of "infection-attributable" cancer involves communities rather than single agents is unresolved, and connects forward to the cell-cycle machinery these viral oncoproteins hijack — the subject of the next chapter.
+## Still open
+
+Why only a minority of persistently infected people develop cancer is not fully understood. Half the world carries *H. pylori*; over 90% of adults carry EBV; HPV infection is near-universal among sexually active adults. The host genetic factors, bacterial or viral strain differences, and environmental cofactors that determine progression in the minority and resolution in the majority are actively studied and incompletely mapped. The answer matters for targeting screening and eradication toward those most at risk.
+
+There is no licensed EBV vaccine as of 2026, despite EBV's role in Burkitt lymphoma, Hodgkin lymphoma, nasopharyngeal carcinoma, and gastric cancer, and despite EBV's near-universal prevalence. An effective vaccine would have a large global cancer prevention impact; why this gap exists — technical, commercial, or regulatory — is itself a question worth asking.
+
+The broader microbial community — the microbiome rather than named pathogens — may modulate cancer risk and therapy response in ways that the single-pathogen framework does not capture. How much of the currently unexplained variation in cancer incidence and treatment response is attributable to microbial communities rather than host genetics or named carcinogens is genuinely open.
+
+---
+
+## LLM Exercises
+
+1. **(Four mechanisms)** List the four mechanisms by which microbes cause cancer, give one representative pathogen for each, and explain why the four are not interchangeable — what feature of the pathogen's biology determines which mechanism applies. For the inflammation mechanism, write a sentence-level causal chain from persistent infection to cancer.
+
+2. **(E6/E7 checkpoint logic)** Explain at the molecular level how HPV E6 and E7 together achieve what would otherwise require two separate somatic mutations in *TP53* and *RB1*. Then predict: in a cell already expressing E6 and E7, what would an additional loss-of-function mutation in *TP53* add, if anything? Justify your answer.
+
+3. **(Mechanism failure)** The "find the oncogene" model works for HPV but fails for *H. pylori*. Construct the argument that someone using only the direct-oncoprotein framework would make about *H. pylori*, explain precisely where that argument goes wrong, and identify what experimental observation would have forced a shift to the inflammation model.
+
+4. **(Prevention chain)** Cervical cancer mortality in sub-Saharan Africa is roughly ten times that in high-income countries. Identify at least three distinct links in the prevention chain from HPV exposure to death, and for each, estimate its relative contribution to the gap. Which single intervention would yield the largest mortality reduction per dollar? Justify with mechanistic and epidemiological reasoning.
+
+5. **(Necessary but not sufficient)** A patient from a region with both high *H. pylori* prevalence and high aflatoxin exposure develops hepatocellular carcinoma. Explain why the two exposures together might produce cancer at higher rates than either alone, using the initiation–promotion framework. Then explain why eradicating *H. pylori* in this patient's community would reduce but not eliminate liver cancer risk, and name the second intervention required.
+
+---
 
 ## References
 
@@ -108,7 +130,3 @@ The central claim is that specific persistent infections cause specific cancers 
 - IARC, Global cancer burden 2022. https://www.iarc.who.int/news-events/new-report-on-global-cancer-burden-in-2022-by-world-region-and-human-development-level/
 - Hanahan, D. (2022). Hallmarks of Cancer: New Dimensions. *Cancer Discovery*, 12(1), 31–46. https://aacrjournals.org/cancerdiscovery/article/12/1/31/675608/
 - American Cancer Society, Cancer Facts & Figures 2026. https://www.cancer.org/research/cancer-facts-statistics/all-cancer-facts-figures/2026-cancer-facts-figures.html
-
-## Prompts
-
-*No figures have been generated for this chapter yet.*
