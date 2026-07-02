@@ -1,5 +1,5 @@
 # Cancer Biology
-## Tik TOC Research Spine
+## Blueprint Research Spine
 
 **Book type:** Course textbook
 **Status:** Split from `cancer-biology-all`; research pass scaffold
