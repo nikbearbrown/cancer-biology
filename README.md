@@ -1,111 +1,57 @@
 # Cancer Biology
 
-**Author:** Humanitarians AI Incorporated
-**Publisher:** Humanitarians AI Incorporated
-**Status:** Draft
+**Author:** Humanitarians AI Incorporated  
+**Publisher:** Humanitarians AI Incorporated  
+**Status:** Draft  
 **Started:** 2026-06-08
 
-## Structure
+## About the book
 
-```
-book.md                 ← book description and high-level outline
-outline.md              ← chapter-level TOC
-vision.md               ← Tic TOC Phase 1
-architecture.md         ← Tic TOC Phase 2
-chapters-spec.md        ← Tic TOC Phase 3
-risks.md                ← Tic TOC Phase 4
-pantry/                 ← scratch fragments
-chapters/               ← markdown source files
-images/                 ← PNGs used by the EPUB
-d3/                     ← interactive D3 HTML figures
+This working textbook traces cancer from normal cell biology to changes in gene regulation, cell division, cell death, and metabolism. It is for students who want to connect those mechanisms with evidence about cancer risk and treatment. Start with the normal cell as the baseline. The manuscript is a draft, not clinical guidance.
 
-— Extraction directories (populated by Cowork extraction pass) —
-anki/                   ← Key Terms → Anki import files
-wayback/                ← AI Wayback Machine sections
-when-to-use-ai/         ← Exercise 1 & 2 (judgment frame) blocks
-llm/                    ← Exercise 3 LLM Exercise blocks
-cli/                    ← Exercise 4 CLI Exercise blocks
-ai-validation/          ← Exercise 5 AI Validation blocks
-exercises/              ← Exercises sections
-bridge/                 ← Bridge sections
-assessments/            ← Assessments sections
-further-reading/        ← Further Reading sections
-cli-quick-reference/    ← CLI Quick Reference sections
+## Learning outcomes
 
-— Supplemental learning mode directories (instructor-populated) —
-glimmers/               ← Glimmer generative assignments
-rubrics/                ← Grading rubrics for Glimmer and case studies
-lecture-notes/          ← Slide-ready condensed chapter summaries
-worked-problems/        ← Step-by-step solved examples
-quizzes/                ← Platform quiz files
-exams/                  ← Exam banks
-discussion-prompts/     ← Seminar-style discussion questions
-case-studies/           ← Case study scenarios (professor-authored only)
-supplemental/           ← Optional ala carte chapters + catalog.md
-slides/                 ← Presentation slides (see also)
-videos/                 ← Video scripts or links (see also)
+- Explain how changes in growth and repair controls distinguish cancer cells from normal cells.
+- Distinguish the roles of oncogenes, tumor suppressors, and changes in gene regulation.
+- Compare evidence about cancer risk and distinguish population findings from cellular mechanisms.
+- Relate cell-cycle regulation, programmed cell death, and metabolism to the concepts covered in the later chapters.
 
-SCRIPTS/
-    svg-to-png.mjs      ← converts images/**/*.svg to 300dpi PNG
-```
+## Read the book
 
-## Chapter Progress
+Open the [Introduction](chapters/00-introduction.md) or browse the [chapters folder](chapters/).
 
-| File | Title | Draft | anki | wayback | when-to-use-ai | llm | cli | ai-validation | exercises | bridge | assessments | further-reading | cli-quick-ref | glimmer | quiz |
-|------|-------|-------|------|---------|----------------|-----|-----|---------------|-----------|--------|-------------|-----------------|---------------|---------|------|
-| 00-frontmatter.md | Front Matter | ☐ | — | — | — | — | — | — | — | — | — | — | — | — | — |
-| 01-introduction.md | Introduction | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 02-chapter-01.md | Chapter 1 | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 03-chapter-02.md | Chapter 2 | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 04-chapter-03.md | Chapter 3 | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 05-chapter-04.md | Chapter 4 | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 06-chapter-05.md | Chapter 5 | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 07-chapter-06.md | Chapter 6 | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 08-chapter-07.md | Chapter 7 | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 09-chapter-08.md | Chapter 8 | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 10-chapter-09.md | Chapter 9 | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 11-chapter-10.md | Chapter 10 | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 12-chapter-11.md | Chapter 11 | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 13-chapter-12.md | Chapter 12 | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 14-chapter-13.md | Chapter 13 | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 15-chapter-14.md | Chapter 14 | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 16-chapter-15.md | Chapter 15 | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 17-chapter-16.md | Chapter 16 | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 99-back-matter.md | Back Matter | ☐ | — | — | — | — | — | — | — | — | — | — | — | — | — |
+- [Front matter](chapters/00-frontmatter.md)
 
-Legend: ☐ = not started  ✓ = complete  — = not applicable
+### Cells, cancer, and risk
 
-## Figures
+1. [The Building Blocks of Life: Normal Cell Biology](chapters/01-the-building-blocks-of-life-normal-cell-biology.md)
+2. [Introduction to Cancer: A Disease of Deregulation](chapters/02-introduction-to-cancer-a-disease-of-deregulation.md)
+3. [Cancer Epidemiology and Risk Factors](chapters/03-cancer-epidemiology-and-risk-factors.md)
 
-Each chapter ends with a **Prompts** section containing ready-to-paste
-prompts for recreating its D3 figures. Load `brutalist/CLAUDE.md` and
-`brutalist/DESIGN.md` into your Claude project context before using them.
+### Genetics and gene regulation
 
-Cowork enrichment generates:
-- `images/cancer-biology-fig-NN.svg` — static SVG (→ PNG for EPUB)
-- `d3/cancer-biology-fig-NN.html` — interactive D3 HTML
+4. [Genetics and Genomic Instability in Cancer](chapters/04-genetics-and-genomic-instability-in-cancer.md)
+5. [Oncogenes](chapters/05-oncogenes.md)
+6. [Tumor Suppressor Genes](chapters/06-tumor-suppressor-genes.md)
+7. [Epigenetics in Cancer: The Methylation and Histone Code](chapters/07-epigenetics-in-cancer-the-methylation-and-histone-code.md)
+8. [Epigenetics in Cancer: Noncoding RNAs, Reprogramming, and Therapy](chapters/08-epigenetics-in-cancer-noncoding-rnas-reprogramming-and-therapy.md)
 
-Convert SVGs to PNG:
-```bash
-node SCRIPTS/svg-to-png.mjs
-```
+### Causes, cell division, and cell death
 
-## Extraction Pass
+9. [Cancer Etiology: Chemical and Radiation Carcinogens](chapters/09-cancer-etiology-chemical-and-radiation-carcinogens.md)
+10. [Cancer Etiology: Viral and Bacterial Carcinogens](chapters/10-cancer-etiology-viral-and-bacterial-carcinogens.md)
+11. [Cell Cycle Control and Cancer: The Cycle and Its Checkpoints](chapters/11-cell-cycle-control-and-cancer-the-cycle-and-its-checkpoints.md)
+12. [Cell Cycle Control and Cancer: Disruption and Therapy](chapters/12-cell-cycle-control-and-cancer-disruption-and-therapy.md)
+13. [Apoptosis in Cancer: The Death Programs](chapters/13-apoptosis-in-cancer-the-death-programs.md)
+14. [Apoptosis in Cancer: Evasion and Restoration](chapters/14-apoptosis-in-cancer-evasion-and-restoration.md)
 
-To populate the extraction directories from authored chapter sections:
+### Metabolism and the tumor environment
 
-```
-Run the Cowork extraction prompt against chapters/
-```
+15. [Cancer Metabolism: The Warburg Effect and Glucose](chapters/15-cancer-metabolism-the-warburg-effect-and-glucose.md)
+16. [Cancer Metabolism: Lipids, Amino Acids, and the Tumor Microenvironment](chapters/16-cancer-metabolism-lipids-amino-acids-and-the-tumor-microenvironment.md)
 
-Each extraction directory contains a README.md explaining what it holds,
-what headings it matches, and how it connects to Medhavy.
+## Resources
 
-## Build
-
-```bash
-npm install        # first time only
-./build.sh
-```
-
-Output goes to `output/` (gitignored).
+- [Back matter](chapters/99-back-matter.md)
+- [Authoring notes](docs/authoring-notes.md): repository layout and the existing figure, extraction, and build instructions.
+- [Outline](outline.md) and [Blueprint](BLUEPRINT.md): planning documents, not the reading sequence above.
