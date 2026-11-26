@@ -1,57 +1,41 @@
 # Cancer Biology
 
-**Author:** Humanitarians AI Incorporated  
-**Publisher:** Humanitarians AI Incorporated  
-**Status:** Draft  
-**Started:** 2026-06-08
-
 ## About the book
 
-This working textbook traces cancer from normal cell biology to changes in gene regulation, cell division, cell death, and metabolism. It is for students who want to connect those mechanisms with evidence about cancer risk and treatment. Start with the normal cell as the baseline. The manuscript is a draft, not clinical guidance.
+This working draft is for students connecting normal cell function with the mechanisms of cancer. Learn to explain how disruption of gene regulation, cell division, cell death and metabolism changes what a tumor does, and to distinguish evidence about risk from a mechanistic explanation. The normal-cell chapter supplies a baseline; the manuscript is not clinical guidance or a reviewed therapeutics edition.
 
-## Learning outcomes
+## Start reading
 
-- Explain how changes in growth and repair controls distinguish cancer cells from normal cells.
-- Distinguish the roles of oncogenes, tumor suppressors, and changes in gene regulation.
-- Compare evidence about cancer risk and distinguish population findings from cellular mechanisms.
-- Relate cell-cycle regulation, programmed cell death, and metabolism to the concepts covered in the later chapters.
+Start with [The Building Blocks of Life: Normal Cell Biology](chapters/01-the-building-blocks-of-life-normal-cell-biology.md). The [complete chapter guide](chapters/README.md) follows the intended reading order.
 
-## Read the book
+## Chapter guide
 
-Open the [Introduction](chapters/00-introduction.md) or browse the [chapters folder](chapters/).
+[Complete chapter guide](chapters/README.md).
 
-- [Front matter](chapters/00-frontmatter.md)
+**Front matter:** [Introduction](chapters/00-introduction.md). **Back matter:** [Reference and supporting sections](chapters/99-back-matter.md).
 
-### Cells, cancer, and risk
+Placeholder directories and an outline scaffold exist; they are not finished teaching material. This is the Cancer Biology manuscript, not a consolidation with a separate therapeutics book.
 
-1. [The Building Blocks of Life: Normal Cell Biology](chapters/01-the-building-blocks-of-life-normal-cell-biology.md)
-2. [Introduction to Cancer: A Disease of Deregulation](chapters/02-introduction-to-cancer-a-disease-of-deregulation.md)
-3. [Cancer Epidemiology and Risk Factors](chapters/03-cancer-epidemiology-and-risk-factors.md)
+## How to teach or study it
 
-### Genetics and gene regulation
+Start with a normal cell, then explain what a cancer cell changes and what evidence supports that explanation. Compare one genetic, one cell-cycle and one metabolic mechanism; for each, write what the evidence does and does not establish. The [blueprint](BLUEPRINT.md), [outline scaffold](outline.md) and [learning architecture](architecture.md) are planning documents. This study suggestion is not an adopted syllabus or validated assessment.
 
-4. [Genetics and Genomic Instability in Cancer](chapters/04-genetics-and-genomic-instability-in-cancer.md)
-5. [Oncogenes](chapters/05-oncogenes.md)
-6. [Tumor Suppressor Genes](chapters/06-tumor-suppressor-genes.md)
-7. [Epigenetics in Cancer: The Methylation and Histone Code](chapters/07-epigenetics-in-cancer-the-methylation-and-histone-code.md)
-8. [Epigenetics in Cancer: Noncoding RNAs, Reprogramming, and Therapy](chapters/08-epigenetics-in-cancer-noncoding-rnas-reprogramming-and-therapy.md)
+## What’s in this repo
 
-### Causes, cell division, and cell death
+| Resource | Link | Coverage | Status |
+| --- | --- | --- | --- |
+| Manuscript | [README.md](chapters/README.md) | 16 numbered chapters plus introduction and front and back matter | Working draft |
+| Planning | [BLUEPRINT.md](BLUEPRINT.md), [outline.md](outline.md), [architecture.md](architecture.md) | Research scaffold, template and proposed learning sequence | Proposed |
+| Videos | [video-ideas.md](vids/video-ideas.md), [README.md](videos/tiktoks/README.md) | 5 short-video scripts plus a video-idea index | Plans and scripts; rendered videos not found |
+| Code and build tooling | [authoring-notes.md](docs/authoring-notes.md), [build.sh](build.sh), [README.md](SCRIPTS/README.md) | Book and graphics build inputs; not learner software | Build status not verified |
+| Slides | — | — | Not found |
+| Separate exercises or worked problems | — | — | Not found |
+| Authored quizzes or assessments | — | — | Not found |
+| Answer keys | — | — | Not found |
+| Figure assets | — | — | Not found |
+| Datasets | — | — | Not found |
+| Web or downloadable book export | — | — | Not found |
 
-9. [Cancer Etiology: Chemical and Radiation Carcinogens](chapters/09-cancer-etiology-chemical-and-radiation-carcinogens.md)
-10. [Cancer Etiology: Viral and Bacterial Carcinogens](chapters/10-cancer-etiology-viral-and-bacterial-carcinogens.md)
-11. [Cell Cycle Control and Cancer: The Cycle and Its Checkpoints](chapters/11-cell-cycle-control-and-cancer-the-cycle-and-its-checkpoints.md)
-12. [Cell Cycle Control and Cancer: Disruption and Therapy](chapters/12-cell-cycle-control-and-cancer-disruption-and-therapy.md)
-13. [Apoptosis in Cancer: The Death Programs](chapters/13-apoptosis-in-cancer-the-death-programs.md)
-14. [Apoptosis in Cancer: Evasion and Restoration](chapters/14-apoptosis-in-cancer-evasion-and-restoration.md)
+## Credits, license, and corrections
 
-### Metabolism and the tumor environment
-
-15. [Cancer Metabolism: The Warburg Effect and Glucose](chapters/15-cancer-metabolism-the-warburg-effect-and-glucose.md)
-16. [Cancer Metabolism: Lipids, Amino Acids, and the Tumor Microenvironment](chapters/16-cancer-metabolism-lipids-amino-acids-and-the-tumor-microenvironment.md)
-
-## Resources
-
-- [Back matter](chapters/99-back-matter.md)
-- [Authoring notes](docs/authoring-notes.md): repository layout and the existing figure, extraction, and build instructions.
-- [Outline](outline.md) and [Blueprint](BLUEPRINT.md): planning documents, not the reading sequence above.
+Humanitarians AI Incorporated is credited as author and publisher. The [front matter](chapters/00-frontmatter.md#copyright) contains the copyright and reuse notice; no separate license file was found. Report a correction through the [repository issues](https://github.com/nikbearbrown/cancer-biology/issues) with the chapter, affected passage, and proposed evidence.
